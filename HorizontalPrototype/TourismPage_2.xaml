@@ -28,6 +28,7 @@
         <Button Content="View More" HorizontalAlignment="Center" Margin="0,450,0,0" VerticalAlignment="Top"/>
         <Button Content="Get Directions" HorizontalAlignment="Left" Margin="163,195,0,0" VerticalAlignment="Top"/>
         <Button Content="Get Directions" HorizontalAlignment="Left" Margin="163,384,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.51,0.587"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="31,450,0,0" VerticalAlignment="Top" Width="42"/>
 
     </Grid>
 </Window>
