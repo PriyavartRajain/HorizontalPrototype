@@ -11,6 +11,7 @@
     <None Remove="bylawsicon.png" />
     <None Remove="calgary-tower.jpg" />
     <None Remove="callIcon.png" />
+    <None Remove="CS.jpg" />
     <None Remove="eventsIcon.jpg" />
     <None Remove="festive.png" />
     <None Remove="heritage.png" />
@@ -29,6 +30,7 @@
     <None Remove="transit.png" />
     <None Remove="viewAll.png" />
     <None Remove="winterSports.png" />
+    <None Remove="Zoo-Lights.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,6 +38,7 @@
     <Resource Include="bylawsicon.png" />
     <Resource Include="calgary-tower.jpg" />
     <Resource Include="callIcon.png" />
+    <Resource Include="CS.jpg" />
     <Resource Include="eventsIcon.jpg" />
     <Resource Include="festive.png" />
     <Resource Include="heritage.png" />
@@ -54,6 +57,7 @@
     <Resource Include="transit.png" />
     <Resource Include="viewAll.png" />
     <Resource Include="winterSports.png" />
+    <Resource Include="Zoo-Lights.jpg" />
   </ItemGroup>
 
 </Project>
