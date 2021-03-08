@@ -17,7 +17,7 @@
         <Image x:Name="identityImg" Margin="16,248,327,209" Stretch="Fill" Source="/identitfication.png"/>
         <Image x:Name="identityImg_Copy" Margin="16,312,327,145" Stretch="Fill" Source="/form.png"/>
         <Image x:Name="identityImg_Copy1" Margin="24,374,342,76" Stretch="Fill" Source="/passport.png"/>
-        <Label Content="Government Issued Photo ID" HorizontalAlignment="Left" Margin="80,254,0,0" VerticalAlignment="Top"/>
+        <Label Content="Government Issued Photo ID." HorizontalAlignment="Left" Margin="80,254,0,0" VerticalAlignment="Top"/>
         <Label Content="Pre-Filled Form: " HorizontalAlignment="Left" Margin="80,323,0,0" VerticalAlignment="Top"/>
         <Button Content="Print" HorizontalAlignment="Left" Margin="175,326,0,0" VerticalAlignment="Top" Height="23" Width="40"/>
         <Label Content="Proof you are allowed to live in Canada" HorizontalAlignment="Left" Margin="82,387,0,0" VerticalAlignment="Top"/>

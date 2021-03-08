@@ -7,39 +7,53 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="architecture.png" />
     <None Remove="bylawsicon.png" />
     <None Remove="calgary-tower.jpg" />
     <None Remove="callIcon.png" />
     <None Remove="eventsIcon.jpg" />
+    <None Remove="festive.png" />
+    <None Remove="heritage.png" />
     <None Remove="housing.png" />
     <None Remove="identitfication.png" />
     <None Remove="immServicesIcon.png" />
     <None Remove="location-map-flat.png" />
     <None Remove="man.png" />
     <None Remove="map1.PNG" />
+    <None Remove="naturalArea.png" />
+    <None Remove="parade.png" />
     <None Remove="relegion.png" />
     <None Remove="search.png" />
     <None Remove="sun_PNG13427.png" />
     <None Remove="tourism.png" />
     <None Remove="transit.png" />
+    <None Remove="viewAll.png" />
+    <None Remove="winterSports.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="architecture.png" />
     <Resource Include="bylawsicon.png" />
     <Resource Include="calgary-tower.jpg" />
     <Resource Include="callIcon.png" />
     <Resource Include="eventsIcon.jpg" />
+    <Resource Include="festive.png" />
+    <Resource Include="heritage.png" />
     <Resource Include="housing.png" />
     <Resource Include="identitfication.png" />
     <Resource Include="immServicesIcon.png" />
     <Resource Include="location-map-flat.png" />
     <Resource Include="man.png" />
     <Resource Include="map1.PNG" />
+    <Resource Include="naturalArea.png" />
+    <Resource Include="parade.png" />
     <Resource Include="relegion.png" />
     <Resource Include="search.png" />
     <Resource Include="sun_PNG13427.png" />
     <Resource Include="tourism.png" />
     <Resource Include="transit.png" />
+    <Resource Include="viewAll.png" />
+    <Resource Include="winterSports.png" />
   </ItemGroup>
 
 </Project>
