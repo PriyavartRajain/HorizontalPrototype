@@ -6,4 +6,36 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="bylawsicon.png" />
+    <None Remove="calgary-tower.jpg" />
+    <None Remove="callIcon.png" />
+    <None Remove="eventsIcon.jpg" />
+    <None Remove="housing.png" />
+    <None Remove="immServicesIcon.png" />
+    <None Remove="location-map-flat.png" />
+    <None Remove="man.png" />
+    <None Remove="map1.PNG" />
+    <None Remove="relegion.png" />
+    <None Remove="sun_PNG13427.png" />
+    <None Remove="tourism.png" />
+    <None Remove="transit.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bylawsicon.png" />
+    <Resource Include="calgary-tower.jpg" />
+    <Resource Include="callIcon.png" />
+    <Resource Include="eventsIcon.jpg" />
+    <Resource Include="housing.png" />
+    <Resource Include="immServicesIcon.png" />
+    <Resource Include="location-map-flat.png" />
+    <Resource Include="man.png" />
+    <Resource Include="map1.PNG" />
+    <Resource Include="relegion.png" />
+    <Resource Include="sun_PNG13427.png" />
+    <Resource Include="tourism.png" />
+    <Resource Include="transit.png" />
+  </ItemGroup>
+
 </Project>

@@ -7,7 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="520" Width="400">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="500" VerticalAlignment="Top" Width="398" Margin="-11,0,0,0"/>
+        <Image x:Name="MainScreenImage" HorizontalAlignment="Center" Height="504" VerticalAlignment="Center" Width="756" Source="/calgary-tower.jpg" RenderTransformOrigin="0.5,0.491"/>
+        <Label x:Name="Welcome_message" Content="I am here to help!" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontFamily="Ink Free"/>
+        <Button x:Name="LangSelec_1" Content="Press here for English" HorizontalAlignment="Center" Margin="0,144,0,0" VerticalAlignment="Top" FontSize="22" Click="OpenMenuWindow">
+        </Button>
+        <Button x:Name="LangSelect_2" Content="हिंदी के लिए यहां दबाएं" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click" FontSize="22" Margin="0,226,0,0"/>
+        <Button x:Name="langSelec_3" Content="اردو کے لئے یہاں دبائیں" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <Button x:Name="langSelec_4" Content="点击这里查看普通话" HorizontalAlignment="Center" Margin="0,398,0,0" VerticalAlignment="Top" FontSize="22"/>
+        <ScrollBar x:Name="scroll_lang" HorizontalAlignment="Left" Margin="373,77,0,0" VerticalAlignment="Top" Height="377" ValueChanged="scroll_lang_ValueChanged"/>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="200,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="324,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="248,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
 
     </Grid>
 </Window>

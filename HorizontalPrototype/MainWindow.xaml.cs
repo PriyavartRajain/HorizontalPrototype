@@ -24,5 +24,22 @@ namespace HorizontalPrototype
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void scroll_lang_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            
+        }
+
+        private void OpenMenuWindow(object sender, RoutedEventArgs e)
+        {
+            Window1 openMenuWindow = new Window1();
+            this.Visibility = Visibility.Hidden;
+            openMenuWindow.Show();
+        }
     }
 }
