@@ -17,6 +17,7 @@
     <None Remove="man.png" />
     <None Remove="map1.PNG" />
     <None Remove="relegion.png" />
+    <None Remove="search.png" />
     <None Remove="sun_PNG13427.png" />
     <None Remove="tourism.png" />
     <None Remove="transit.png" />
@@ -33,6 +34,7 @@
     <Resource Include="man.png" />
     <Resource Include="map1.PNG" />
     <Resource Include="relegion.png" />
+    <Resource Include="search.png" />
     <Resource Include="sun_PNG13427.png" />
     <Resource Include="tourism.png" />
     <Resource Include="transit.png" />

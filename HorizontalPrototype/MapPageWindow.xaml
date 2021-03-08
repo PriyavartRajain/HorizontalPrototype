@@ -13,7 +13,7 @@
         <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
         <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Image x:Name="search" HorizontalAlignment="Left" Height="181" Margin="-14,-19,0,0" VerticalAlignment="Top" Width="264" Source="/search.png"/>
-        <Image x:Name="man" HorizontalAlignment="Left" Height="50" Margin="42,378,0,0" VerticalAlignment="Top" Width="49" Source="/man.png"/>
+        <Image x:Name="man" HorizontalAlignment="Left" Height="50" Margin="49,363,0,0" VerticalAlignment="Top" Width="49" Source="/man.png"/>
         <ComboBox x:Name="ExploreComboBox" Width="127" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,83,0,0" IsDropDownOpen="True">
             <ComboBoxItem Content="Hotels"></ComboBoxItem>
             <ComboBoxItem Content="Restaurants"></ComboBoxItem>
@@ -27,6 +27,7 @@
         <Label Content="Explore!" HorizontalAlignment="Left" Margin="15,81,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Button Content="Zoom In" HorizontalAlignment="Left" Margin="319,403,0,0" VerticalAlignment="Top" Width="65"/>
         <Button Content="Zoom Out" HorizontalAlignment="Left" Margin="319,437,0,0" VerticalAlignment="Top" Width="65"/>
+        <Button Content="&lt; Back" HorizontalAlignment="Left" Margin="15,437,0,0" VerticalAlignment="Top" Width="47"/>
 
     </Grid>
 </Window>
