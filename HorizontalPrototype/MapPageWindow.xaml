@@ -25,6 +25,8 @@
             <ComboBoxItem Content="Gas Stations"></ComboBoxItem>
         </ComboBox>
         <Label Content="Explore!" HorizontalAlignment="Left" Margin="15,81,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button Content="Zoom In" HorizontalAlignment="Left" Margin="319,403,0,0" VerticalAlignment="Top" Width="65"/>
+        <Button Content="Zoom Out" HorizontalAlignment="Left" Margin="319,437,0,0" VerticalAlignment="Top" Width="65"/>
 
     </Grid>
 </Window>
