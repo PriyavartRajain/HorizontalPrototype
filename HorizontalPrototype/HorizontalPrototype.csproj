@@ -12,6 +12,7 @@
     <None Remove="callIcon.png" />
     <None Remove="eventsIcon.jpg" />
     <None Remove="housing.png" />
+    <None Remove="identitfication.png" />
     <None Remove="immServicesIcon.png" />
     <None Remove="location-map-flat.png" />
     <None Remove="man.png" />
@@ -29,6 +30,7 @@
     <Resource Include="callIcon.png" />
     <Resource Include="eventsIcon.jpg" />
     <Resource Include="housing.png" />
+    <Resource Include="identitfication.png" />
     <Resource Include="immServicesIcon.png" />
     <Resource Include="location-map-flat.png" />
     <Resource Include="man.png" />
