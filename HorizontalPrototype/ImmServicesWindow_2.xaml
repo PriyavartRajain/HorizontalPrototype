@@ -24,7 +24,8 @@
         <Label Content="1>" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label Content="2>" HorizontalAlignment="Left" Margin="10,411,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Button Content="View More" HorizontalAlignment="Center" Margin="0,466,0,0" VerticalAlignment="Top" Height="28" Width="77"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="10,470,0,0" VerticalAlignment="Top" Height="20" Width="88" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="37" Margin="10,457,0,0" VerticalAlignment="Top" Width="52" Source="/previous.png"/>
+        <Image HorizontalAlignment="Left" Height="37" Margin="347,457,0,0" VerticalAlignment="Top" Width="52" Source="/home.png"/>
 
     </Grid>
 </Window>

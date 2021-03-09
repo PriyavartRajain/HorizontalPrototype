@@ -25,9 +25,10 @@
             <ComboBoxItem Content="Gas Stations"></ComboBoxItem>
         </ComboBox>
         <Label Content="Explore!" HorizontalAlignment="Left" Margin="15,81,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Button Content="Zoom In" HorizontalAlignment="Left" Margin="319,403,0,0" VerticalAlignment="Top" Width="65"/>
-        <Button Content="Zoom Out" HorizontalAlignment="Left" Margin="319,437,0,0" VerticalAlignment="Top" Width="65"/>
-        <Button Content="&lt; Back" HorizontalAlignment="Left" Margin="15,437,0,0" VerticalAlignment="Top" Width="47"/>
+        <Button Content="Zoom In" HorizontalAlignment="Left" Margin="319,373,0,0" VerticalAlignment="Top" Width="65"/>
+        <Button Content="Zoom Out" HorizontalAlignment="Left" Margin="319,407,0,0" VerticalAlignment="Top" Width="65"/>
+        <Image HorizontalAlignment="Left" Height="37" Margin="15,444,0,0" VerticalAlignment="Top" Width="52" Source="/previous.png"/>
+        <Image HorizontalAlignment="Left" Height="37" Margin="347,444,0,0" VerticalAlignment="Top" Width="52" Source="/home.png"/>
 
     </Grid>
 </Window>

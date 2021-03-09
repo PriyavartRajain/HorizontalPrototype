@@ -25,6 +25,7 @@
     <None Remove="map1.PNG" />
     <None Remove="naturalArea.png" />
     <None Remove="parade.png" />
+    <None Remove="previous.png" />
     <None Remove="relegion.png" />
     <None Remove="search.png" />
     <None Remove="sun_PNG13427.png" />
@@ -54,6 +55,7 @@
     <Resource Include="map1.PNG" />
     <Resource Include="naturalArea.png" />
     <Resource Include="parade.png" />
+    <Resource Include="previous.png" />
     <Resource Include="relegion.png" />
     <Resource Include="search.png" />
     <Resource Include="sun_PNG13427.png" />

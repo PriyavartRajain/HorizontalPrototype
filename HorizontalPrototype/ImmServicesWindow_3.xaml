@@ -5,23 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="ImmServicesWindow_3" Height="520" Width="400">
+        Title="ImmServicesWindow_3" Height="521" Width="400">
     <Grid>
-        <Label Content="Health Card" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" FontStyle="Normal"/>
-        <TextBlock HorizontalAlignment="Left" Margin="16,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="355"><Run Text="An Alberta health care card is a piece of government-issued identification that gives eligible residents of Alberta access to medical services."/><LineBreak/><Run Text="To receive these services, you just need to show your Alberta health care card and photo identification at a licensed medical office. "/></TextBlock>
+        <Label Content="Health Card" HorizontalAlignment="Left" Margin="12,41,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" FontStyle="Normal"/>
+        <TextBlock HorizontalAlignment="Left" Margin="18,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="354"><Run Text="An Alberta health care card is a piece of government-issued identification that gives eligible residents of Alberta access to medical services."/><LineBreak/><Run Text="To receive these services, you just need to show your Alberta health care card and photo identification at a licensed medical office. "/></TextBlock>
         <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
         <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label Content="Documents You'll Need to Bring" HorizontalAlignment="Left" Margin="10,202,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontStyle="Normal"/>
-        <Image x:Name="identityImg" Margin="16,248,327,209" Stretch="Fill" Source="/identitfication.png"/>
-        <Image x:Name="identityImg_Copy" Margin="16,312,327,145" Stretch="Fill" Source="/form.png"/>
-        <Image x:Name="identityImg_Copy1" Margin="24,374,342,76" Stretch="Fill" Source="/passport.png"/>
-        <Label Content="Government Issued Photo ID." HorizontalAlignment="Left" Margin="80,254,0,0" VerticalAlignment="Top"/>
-        <Label Content="Pre-Filled Form: " HorizontalAlignment="Left" Margin="80,323,0,0" VerticalAlignment="Top"/>
-        <Button Content="Print" HorizontalAlignment="Left" Margin="175,326,0,0" VerticalAlignment="Top" Height="23" Width="40"/>
-        <Label Content="Proof you are allowed to live in Canada" HorizontalAlignment="Left" Margin="82,387,0,0" VerticalAlignment="Top"/>
-        <Label Content="Where to get:  " HorizontalAlignment="Left" Margin="16,442,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontStyle="Normal"/>
-        <Button Content="Alberta Registry Locations" HorizontalAlignment="Left" Height="25" Margin="166,451,0,0" VerticalAlignment="Top" Width="205"/>
+        <Label Content="Documents You'll Need to Bring" HorizontalAlignment="Left" Margin="12,188,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontStyle="Normal"/>
+        <Image x:Name="identityImg" Margin="18,234,326,223" Stretch="Fill" Source="/identitfication.png"/>
+        <Image x:Name="identityImg_Copy" Margin="18,298,326,159" Stretch="Fill" Source="/form.png"/>
+        <Image x:Name="identityImg_Copy1" Margin="26,360,340,90" Stretch="Fill" Source="/passport.png"/>
+        <Label Content="Government Issued Photo ID." HorizontalAlignment="Left" Margin="82,0,0,0" VerticalAlignment="Center"/>
+        <Label Content="Pre-Filled Form: " HorizontalAlignment="Left" Margin="82,309,0,0" VerticalAlignment="Top"/>
+        <Button Content="Print" HorizontalAlignment="Left" Margin="176,312,0,0" VerticalAlignment="Top" Height="23" Width="40"/>
+        <Label Content="Proof you are allowed to live in Canada" HorizontalAlignment="Left" Margin="84,373,0,0" VerticalAlignment="Top"/>
+        <Label Content="Where to get:  " HorizontalAlignment="Left" Margin="16,420,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontStyle="Normal"/>
+        <Button Content="Alberta Registry Locations" HorizontalAlignment="Left" Height="25" Margin="168,429,0,0" VerticalAlignment="Top" Width="204"/>
+        <Image HorizontalAlignment="Left" Height="29" Margin="10,466,0,0" VerticalAlignment="Top" Width="46" Source="/previous.png"/>
+        <Image HorizontalAlignment="Left" Height="31" Margin="348,466,0,0" VerticalAlignment="Top" Width="43" Source="/home.png"/>
     </Grid>
 </Window>

@@ -21,6 +21,7 @@
         <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
         <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Button Content="Refugee" HorizontalAlignment="Center" Margin="0,433,0,0" VerticalAlignment="Top" Height="41" Width="116" FontWeight="Bold"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="29,443,0,0" VerticalAlignment="Top" Height="21" Width="88" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Left" Height="37" Margin="10,435,0,0" VerticalAlignment="Top" Width="52" Source="/previous.png"/>
+        <Image HorizontalAlignment="Left" Height="37" Margin="348,435,0,0" VerticalAlignment="Top" Width="52" Source="/home.png"/>
     </Grid>
 </Window>

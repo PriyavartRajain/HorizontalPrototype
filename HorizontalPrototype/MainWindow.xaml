@@ -19,6 +19,7 @@
         <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="200,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="324,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="248,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
+        <Button Content="Log Out" HorizontalAlignment="Center" Margin="0,452,0,0" VerticalAlignment="Top" Height="26" Width="62" FontWeight="Bold"/>
 
     </Grid>
 </Window>
