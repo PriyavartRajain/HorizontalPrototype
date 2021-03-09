@@ -11,6 +11,7 @@
     <None Remove="bylawsicon.png" />
     <None Remove="calgary-tower.jpg" />
     <None Remove="callIcon.png" />
+    <None Remove="cloud.png" />
     <None Remove="CS.jpg" />
     <None Remove="eventsIcon.jpg" />
     <None Remove="festive.png" />
@@ -19,6 +20,7 @@
     <None Remove="identitfication.png" />
     <None Remove="immServicesIcon.png" />
     <None Remove="location-map-flat.png" />
+    <None Remove="logInScreen.png" />
     <None Remove="man.png" />
     <None Remove="map1.PNG" />
     <None Remove="naturalArea.png" />
@@ -38,6 +40,7 @@
     <Resource Include="bylawsicon.png" />
     <Resource Include="calgary-tower.jpg" />
     <Resource Include="callIcon.png" />
+    <Resource Include="cloud.png" />
     <Resource Include="CS.jpg" />
     <Resource Include="eventsIcon.jpg" />
     <Resource Include="festive.png" />
@@ -46,6 +49,7 @@
     <Resource Include="identitfication.png" />
     <Resource Include="immServicesIcon.png" />
     <Resource Include="location-map-flat.png" />
+    <Resource Include="logInScreen.png" />
     <Resource Include="man.png" />
     <Resource Include="map1.PNG" />
     <Resource Include="naturalArea.png" />
