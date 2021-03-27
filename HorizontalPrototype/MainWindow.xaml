@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="MainWindow" Height="520" Width="400">
-    <Grid>
-        <Image x:Name="MainScreenImage" HorizontalAlignment="Center" Height="504" VerticalAlignment="Center" Width="756" Source="/calgary-tower.jpg" RenderTransformOrigin="0.5,0.491"/>
+        Title="MainWindow" Height="520" Width="400" SizeToContent="WidthAndHeight">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Height="520">
+        <Image x:Name="MainScreenImage" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/calgary-tower.jpg" RenderTransformOrigin="0.5,0.491" Stretch="UniformToFill" StretchDirection="Both" Width="778" Height="520"/>
         <Label x:Name="Welcome_message" Content="I am here to help!" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontFamily="Ink Free"/>
         <Button x:Name="LangSelec_1" Content="Press here for English" HorizontalAlignment="Center" Margin="0,144,0,0" VerticalAlignment="Top" FontSize="22" Click="OpenMenuWindow">
         </Button>
@@ -20,6 +20,6 @@
         <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="324,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="248,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
         <Button Content="Log Out" HorizontalAlignment="Center" Margin="0,452,0,0" VerticalAlignment="Top" Height="26" Width="62" FontWeight="Bold"/>
-
+        <Grid Height="520" Width="400"/>
     </Grid>
 </Window>
