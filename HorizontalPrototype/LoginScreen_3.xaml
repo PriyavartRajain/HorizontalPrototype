@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="LoginScreen_3" Height="520" Width="400">
-    <Grid>
-        <Image Margin="-3,307,2,-52" RenderTransformOrigin="0.5,0.5" Source="/logInScreen.png">
+        Title="LoginScreen_3" Height="520" Width="400" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
+    <Grid Width="400" Height="520">
+        <Image Margin="-3,313,2,-58" RenderTransformOrigin="0.5,0.5" Source="/logInScreen.png">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>

@@ -41,5 +41,12 @@ namespace HorizontalPrototype
             this.Visibility = Visibility.Hidden;
             openMenuWindow.Show();
         }
+
+        private void OpenLoginOptions(object sender, RoutedEventArgs e)
+        {
+            LoginScreen openLogIn = new LoginScreen();
+            this.Visibility = Visibility.Hidden;
+            openLogIn.Show();
+        }
     }
 }

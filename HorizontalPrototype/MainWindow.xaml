@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="MainWindow" Height="520" Width="400" SizeToContent="WidthAndHeight">
+        Title="MainWindow" Height="520" Width="400" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Height="520">
         <Image x:Name="MainScreenImage" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/calgary-tower.jpg" RenderTransformOrigin="0.5,0.491" Stretch="UniformToFill" StretchDirection="Both" Width="778" Height="520"/>
         <Label x:Name="Welcome_message" Content="I am here to help!" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontFamily="Ink Free"/>
-        <Button x:Name="LangSelec_1" Content="Press here for English" HorizontalAlignment="Center" Margin="0,144,0,0" VerticalAlignment="Top" FontSize="22" Click="OpenMenuWindow">
+        <Button x:Name="LangSelec_1" Content="Press here for English" HorizontalAlignment="Center" Margin="0,144,0,0" VerticalAlignment="Top" FontSize="22" Click="OpenLoginOptions">
         </Button>
         <Button x:Name="LangSelect_2" Content="हिंदी के लिए यहां दबाएं" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click" FontSize="22" Margin="0,226,0,0"/>
         <Button x:Name="langSelec_3" Content="اردو کے لئے یہاں دبائیں" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" FontSize="22"/>
@@ -19,7 +19,6 @@
         <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="200,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="324,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="248,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
-        <Button Content="Log Out" HorizontalAlignment="Center" Margin="0,452,0,0" VerticalAlignment="Top" Height="26" Width="62" FontWeight="Bold"/>
         <Grid Height="520" Width="400"/>
     </Grid>
 </Window>
