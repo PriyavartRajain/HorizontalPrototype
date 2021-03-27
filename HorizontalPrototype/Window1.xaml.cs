@@ -29,9 +29,11 @@ namespace HorizontalPrototype
             mapPage.Show();
         }
 
-        //private void openHousingPage(object sender, RoutedEventArgs e)
-        //{
-
-        //}
+        private void openImmServices(object sender, RoutedEventArgs e)
+        {
+            ImmServicesWindow immServ = new ImmServicesWindow();
+            this.Visibility = Visibility.Hidden;
+            immServ.Show();
+        }
     }
 }

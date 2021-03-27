@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="ImmServicesWindow" Height="500" Width="400">
+        Title="ImmServicesWindow" Height="520" Width="400" SizeToContent="WidthAndHeight">
     <Grid>
         <Border BorderThickness="1" BorderBrush="Black">
-            <TextBox TextWrapping="Wrap" Margin="0,53,0,391" Text="Select your status in Canada" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" FontStyle="Italic" BorderThickness="2.5" TextAlignment="Center" HorizontalAlignment="Center" Width="298"/>
+            <TextBox TextWrapping="Wrap" Margin="0,53,0,408" Text="Select your status in Canada" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" FontStyle="Italic" BorderThickness="2.5" TextAlignment="Center" HorizontalAlignment="Center" Width="298"/>
         </Border>
         <Button Content="Skilled Worker" HorizontalAlignment="Center" Margin="0,107,0,0" VerticalAlignment="Top" Height="41" Width="116" FontWeight="Bold"/>
         <Button Content="Student" HorizontalAlignment="Center" Margin="0,162,0,0" VerticalAlignment="Top" Height="41" Width="116" FontWeight="Bold"/>

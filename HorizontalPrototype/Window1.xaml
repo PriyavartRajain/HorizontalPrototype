@@ -14,7 +14,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="immServicesButton" Margin="162,55,162,367">
+        <Button x:Name="immServicesButton" Margin="162,55,162,367" Click="openImmServices">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="immIcon" Source="/immServicesIcon.png"/>
