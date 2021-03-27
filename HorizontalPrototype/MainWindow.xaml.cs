@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace HorizontalPrototype
+namespace Call1
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,23 +23,6 @@ namespace HorizontalPrototype
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void scroll_lang_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            
-        }
-
-        private void OpenMenuWindow(object sender, RoutedEventArgs e)
-        {
-            Window1 openMenuWindow = new Window1();
-            this.Visibility = Visibility.Hidden;
-            openMenuWindow.Show();
         }
     }
 }

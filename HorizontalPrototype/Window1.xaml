@@ -1,87 +1,40 @@
-﻿<Window x:Class="HorizontalPrototype.Window1"
+﻿<Window x:Class="Call1.Window1"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:HorizontalPrototype"
+        xmlns:local="clr-namespace:Call1"
         mc:Ignorable="d"
         Title="Window1" Height="520" Width="400">
     <Grid>
-        <Button x:Name="mapButton" Margin="23,55,303,367" Click="openMapPage">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image x:Name="mapIcon" Source="/location-map-flat.png"/>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="immServicesButton" Margin="162,55,162,367" Click="openImmServices">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image x:Name="immIcon" Source="/immServicesIcon.png"/>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="bylawButton" Margin="18,196,298,219">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image x:Name="bylawIcon" Source="/transit.png" />
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="transitButton" Margin="287,55,30,360">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image x:Name="transitIcon" Source="/bylawsicon.png" Margin="-13,-9,-10,-9"/>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="housingButton" Margin="158,196,158,219">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image x:Name="housingIcon" Source="/housing.png" Margin="-18,-11,-10,-9"/>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="callButton" Margin="302,196,30,219">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image x:Name="callIcon" Source="/callIcon.png" Margin="-18,-11,-10,-9"/>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="tourismButton" Margin="34,351,298,64">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image x:Name="tourismIcon" Source="/tourism.png" Margin="-18,-11,-10,-9"/>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="eventsButton" Margin="172,358,172,64">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image x:Name="eventsIcon" Source="/eventsIcon.jpg" Margin="-18,-11,-10,-9"/>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Button x:Name="relegionButton" Margin="302,358,30,64">
-            <Button.Template>
-                <ControlTemplate>
-                    <Image x:Name="relegionIcon" Source="/relegion.png" Margin="-18,-11,-10,-9"/>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-        <Label Content="Map" HorizontalAlignment="Left" Margin="42,142,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Immigration Services" HorizontalAlignment="Center" Margin="0,142,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Bylaws" HorizontalAlignment="Left" Margin="304,142,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Transit" HorizontalAlignment="Left" Margin="36,290,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Housing" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Call" HorizontalAlignment="Left" Margin="313,290,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Tourism" HorizontalAlignment="Left" Margin="39,445,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Events" HorizontalAlignment="Center" Margin="0,445,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Religion" HorizontalAlignment="Left" Margin="305,445,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
         <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
         <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+
+
+        <Button x:Name="transitButton_Copy2" Margin="346,470,10,10">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/home.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button x:Name="transitButton_Copy3" Margin="0,470,356,10">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/previous.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="transitButton_Copy" Margin="156,166,207,303">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/phone-call.png" Margin="-13,-9,-55,-51"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label x:Name="date_Copy" Content="Pick up the headset" HorizontalAlignment="Center" Margin="0,274,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
     </Grid>
 </Window>
