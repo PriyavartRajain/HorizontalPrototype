@@ -1,0 +1,25 @@
+﻿<Window x:Class="Events.Event2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Events"
+        mc:Ignorable="d"
+        Title="Event2" Height="520" Width="400">
+    <Grid>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
+        <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Image x:Name="weatherPic_Copy" HorizontalAlignment="Left" Height="112" Margin="36,122,0,0" VerticalAlignment="Top" Width="123" Source="/trumpet.png"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="112" Margin="36,122,0,0" VerticalAlignment="Top" Width="348"/>
+        <TextBox HorizontalAlignment="Left" FontSize="15" FontWeight ="Bold"  Height="112" Margin="153,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" Text="Herp Alpert&#xD;&#xA;Details:&#xD;&#xA;------------------------------------&#xD;&#xA;Date And Time: -----------------&#xD;&#xA;" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Get Ticket" HorizontalAlignment="Left" Height="20" Margin="200,214,0,0" VerticalAlignment="Top" Width="68"/>
+        <Image x:Name="weatherPic_Copy1" HorizontalAlignment="Left" Height="112" Margin="36,248,0,0" VerticalAlignment="Top" Width="123" Source="/mic.png"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="112" Margin="36,248,0,0" VerticalAlignment="Top" Width="348"/>
+        <TextBox HorizontalAlignment="Left" FontSize="15" FontWeight ="Bold"  Height="112" Margin="153,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231" Text="Home Free Vocal&#xA;Details:&#xA;------------------------------------&#xA;Date And Time: -----------------&#xA;" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Get Ticket" HorizontalAlignment="Left" Height="20" Margin="200,340,0,0" VerticalAlignment="Top" Width="68"/>
+
+
+    </Grid>
+</Window>
