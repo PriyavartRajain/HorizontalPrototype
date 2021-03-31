@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="MapPageWindow" Height="520" Width="400">
-    <Grid>
+        Title="MapPageWindow" Height="520" Width="400" ResizeMode="NoResize" SizeToContent="WidthAndHeight">
+    <Grid Width="400" Height="520">
         <Image x:Name="citymap_1" HorizontalAlignment="Center" Height="516" VerticalAlignment="Center" Width="424" Source="/map1.PNG"/>
         <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
         <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
