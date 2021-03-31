@@ -1,0 +1,96 @@
+﻿<Window x:Class="ByLaws.ByLaw1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ByLaws"
+        mc:Ignorable="d"
+        Title="Bylaws" Height="520" Width="400">
+    <Grid>
+        <Button x:Name="bylawButton" Margin="29,199,295,212">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="bylawIcon" Source="/marijuana.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="transitButton" Margin="287,55,30,360">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/bylawsicon.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
+        <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Addresses" HorizontalAlignment="Left" Margin="23,155,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Garbage" HorizontalAlignment="Left" Margin="160,155,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Littering" HorizontalAlignment="Left" Margin="293,155,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.433,-0.072"/>
+        <Label Content="Cannabis" HorizontalAlignment="Left" Margin="23,290,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="bylawButton_Copy" Margin="157,199,170,217">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="bylawIcon" Source="/smoking.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="bylawButton_Copy1" Margin="296,196,30,214" RenderTransformOrigin="0.47,0.311">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="bylawIcon" Source="/work-tools.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="bylawButton_Copy2" Margin="31,78,295,354">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="bylawIcon" Source="/home.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="bylawButton_Copy3" Margin="165,78,169,349">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="bylawIcon" Source="/bin.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="bylawButton_Copy4" Margin="290,78,40,349">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="bylawIcon" Source="/throw-trash.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="Smoking" HorizontalAlignment="Left" Margin="157,290,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Content="streets" HorizontalAlignment="Left" Margin="300,290,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="bylawButton_Copy5" Margin="34,336,302,96">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="bylawIcon" Source="/drop.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="bylawButton_Copy6" Margin="165,336,169,96" RenderTransformOrigin="0.482,0.729">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="bylawIcon" Source="/noise.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="bylawButton_Copy7" Margin="300,336,34,96" RenderTransformOrigin="0.527,0.738">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="bylawIcon" Source="/park.png" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label Content="Water" HorizontalAlignment="Left" Margin="34,410,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Noise" HorizontalAlignment="Left" Margin="165,413,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.463,0.331"/>
+        <Label Content="Parks\Pathways" HorizontalAlignment="Left" Margin="266,413,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" RenderTransformOrigin="2.582,3.15"/>
+        <Button Content="View more" Margin="149,462,153,23"/>
+    </Grid>
+</Window>

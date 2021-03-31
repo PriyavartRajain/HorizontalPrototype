@@ -13,11 +13,11 @@ using System.Windows.Shapes;
 namespace Call1
 {
     /// <summary>
-    /// Interaction logic for Window3.xaml
+    /// Interaction logic for call1.xaml
     /// </summary>
-    public partial class Window3 : Window
+    public partial class call1 : Window
     {
-        public Window3()
+        public call1()
         {
             InitializeComponent();
         }

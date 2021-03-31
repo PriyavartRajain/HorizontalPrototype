@@ -1,0 +1,138 @@
+﻿<Window x:Class="Religion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Religion"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="520" Width="400">
+    <Grid>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
+        <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+
+        <Button x:Name="transitButton_Copy1" Margin="360,467,0,0" RenderTransformOrigin="0.615,-0.302" Height="18" VerticalAlignment="Top">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/home.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="transitButton_Copy" Margin="10,94,289,346" RenderTransformOrigin="0.615,-0.302">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/4.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label x:Name="date_Copy" Content="Choose your Religion:" HorizontalAlignment="Left" Margin="0,46,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="transitButton_Copy3" Margin="173,94,127,346" RenderTransformOrigin="0.615,-0.302">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/Christianity.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="transitButton_Copy4" Margin="290,94,9,346" RenderTransformOrigin="0.615,-0.302">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/7.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="transitButton_Copy5" Margin="22,220,277,220" RenderTransformOrigin="0.615,-0.302">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/5.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+            <Button x:Name="transitButton_Copy8" RenderTransformOrigin="0.615,-0.302" Height="64" Width="101">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image x:Name="transitIcon" Source="/4.png" Margin="-13,-9,-10,-9"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Button>
+        <Button x:Name="transitButton_Copy9" Margin="172,220,127,220" RenderTransformOrigin="0.615,-0.302">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/8.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+            <Button x:Name="transitButton_Copy10" RenderTransformOrigin="0.615,-0.302" Height="64" Width="101">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image x:Name="transitIcon" Source="/4.png" Margin="-13,-9,-10,-9"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Button>
+        <Button x:Name="transitButton_Copy11" Margin="298,220,2,220" RenderTransformOrigin="0.615,-0.302">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/6.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+            <Button x:Name="transitButton_Copy12" RenderTransformOrigin="0.615,-0.302" Height="64" Width="101">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image x:Name="transitIcon" Source="/4.png" Margin="-13,-9,-10,-9"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Button>
+        <Button x:Name="transitButton_Copy15" Margin="22,352,277,88" RenderTransformOrigin="0.615,-0.302">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/2.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+            <Button x:Name="transitButton_Copy16" RenderTransformOrigin="0.615,-0.302" Height="64" Width="101">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image x:Name="transitIcon" Source="/4.png" Margin="-13,-9,-10,-9"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Button>
+        <Button x:Name="transitButton_Copy17" Margin="172,352,127,88" RenderTransformOrigin="0.615,-0.302">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/3.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="transitButton_Copy19" Margin="289,352,10,88" RenderTransformOrigin="0.615,-0.302">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/1.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+            <Button x:Name="transitButton_Copy20" RenderTransformOrigin="0.615,-0.302" Height="64" Width="101">
+                <Button.Template>
+                    <ControlTemplate>
+                        <Image x:Name="transitIcon" Source="/4.png" Margin="-13,-9,-10,-9"/>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Button>
+        <Button x:Name="transitButton_Copy13" Margin="10,467,350,19" RenderTransformOrigin="0.615,-0.302">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="transitIcon" Source="/previous.png" Margin="-13,-9,-10,-9"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label x:Name="date_Copy1" Content="Islam" HorizontalAlignment="Left" Margin="37,177,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="date_Copy2" Content="Cristianity" HorizontalAlignment="Left" Margin="179,177,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="date_Copy3" Content="Judaism" HorizontalAlignment="Left" Margin="319,177,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="date_Copy4" Content="Hinduism" HorizontalAlignment="Left" Margin="26,301,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="date_Copy5" Content="Shinto" HorizontalAlignment="Left" Margin="194,301,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="date_Copy6" Content="Shikhism" HorizontalAlignment="Left" Margin="302,301,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="date_Copy7" Content="Confucian" HorizontalAlignment="Left" Margin="28,421,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="date_Copy8" Content="Buddhism" HorizontalAlignment="Left" Margin="173,421,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="date_Copy9" Content="Taoism" HorizontalAlignment="Left" Margin="302,421,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+    </Grid>
+</Window>
