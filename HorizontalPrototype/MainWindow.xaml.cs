@@ -30,11 +30,6 @@ namespace HorizontalPrototype
 
         }
 
-        private void scroll_lang_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-        {
-            
-        }
-
         private void OpenMenuWindow(object sender, RoutedEventArgs e)
         {
             Window1 openMenuWindow = new Window1();
@@ -47,6 +42,11 @@ namespace HorizontalPrototype
             LoginScreen openLogIn = new LoginScreen();
             this.Visibility = Visibility.Hidden;
             openLogIn.Show();
+        }
+
+        private void scroll_lang_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+
         }
     }
 }

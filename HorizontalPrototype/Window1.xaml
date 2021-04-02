@@ -5,84 +5,91 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="Window1" Height="520" SizeToContent="WidthAndHeight" ResizeMode="NoResize" Width="400">
-    <Grid Width="400" Height="520">
-        <Button x:Name="mapButton" Margin="23,55,303,367" Click="openMapPage">
+        Title="Window1" SizeToContent="WidthAndHeight" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Width="518" Height="650">
+        <Button x:Name="mapButton" Margin="32,62,366,450" Click="openMapPage">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="mapIcon" Source="/location-map-flat.png"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="immServicesButton" Margin="162,55,162,367" Click="openImmServices">
+        <Button x:Name="immServicesButton" Margin="196,54,196,450" Click="openImmServices">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="immIcon" Source="/immServicesIcon.png"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="bylawButton" Margin="18,196,298,219">
+        <Button x:Name="bylawButton" Margin="30,240,361,270" Click="openTransit">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="bylawIcon" Source="/transit.png" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="transitButton" Margin="287,55,30,360">
+        <Button x:Name="transitButton" Margin="356,44,18,440" Click="openByLaws">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="transitIcon" Source="/bylawsicon.png" Margin="-13,-9,-10,-9"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="housingButton" Margin="158,196,158,219">
+        <Button x:Name="housingButton" Margin="198,246,194,264" Click="housingButton_Click">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="housingIcon" Source="/housing.png" Margin="-18,-11,-10,-9"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="callButton" Margin="302,196,30,219">
+        <Button x:Name="callButton" Margin="371,240,34,270" Click="callButton_Click">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="callIcon" Source="/callIcon.png" Margin="-18,-11,-10,-9"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="tourismButton" Margin="34,351,298,64">
+        <Button x:Name="tourismButton" Margin="40,408,371,111" Click="openTourism1">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="tourismIcon" Source="/tourism.png" Margin="-18,-11,-10,-9"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="eventsButton" Margin="172,358,172,64">
+        <Button x:Name="eventsButton" Margin="216,435,212,106" RenderTransformOrigin="0.548,0.53" Click="eventsButton_Click">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="eventsIcon" Source="/eventsIcon.jpg" Margin="-18,-11,-10,-9"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="relegionButton" Margin="302,358,30,64">
+        <Button x:Name="relegionButton" Margin="369,424,32,88" Click="openReligion">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="relegionIcon" Source="/relegion.png" Margin="-18,-11,-10,-9"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label Content="Map" HorizontalAlignment="Left" Margin="42,142,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Immigration Services" HorizontalAlignment="Center" Margin="0,142,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Bylaws" HorizontalAlignment="Left" Margin="304,142,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Transit" HorizontalAlignment="Left" Margin="36,290,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Housing" HorizontalAlignment="Center" Margin="0,290,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Call" HorizontalAlignment="Left" Margin="313,290,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Tourism" HorizontalAlignment="Left" Margin="39,445,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Events" HorizontalAlignment="Center" Margin="0,445,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Religion" HorizontalAlignment="Left" Margin="305,445,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
-        <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Button Content="Log Out" HorizontalAlignment="Left" Margin="167,471,0,0" VerticalAlignment="Top" Height="26" Width="62" FontWeight="Bold" RenderTransformOrigin="0.477,1.517"/>
+        <Label Content="Map" HorizontalAlignment="Left" Margin="60,182,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Height="35" Width="62"/>
+        <Label Content="Immigration&#xD;&#xA;   Services" Margin="0,182,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" HorizontalContentAlignment="Center" ScrollViewer.HorizontalScrollBarVisibility="Auto" Height="71" ScrollViewer.VerticalScrollBarVisibility="Auto" FontStyle="Normal" UseLayoutRounding="False" FlowDirection="LeftToRight" VerticalContentAlignment="Top" HorizontalAlignment="Center" Width="130" RenderTransformOrigin="0.516,0.764"/>
+        <Label Content="Bylaws" HorizontalAlignment="Left" Margin="392,182,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Height="35" Width="86"/>
+        <Label Content="Transit" HorizontalAlignment="Left" Margin="57,368,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Height="36" Width="88"/>
+        <Label Content="Housing" HorizontalAlignment="Center" Margin="0,368,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Height="36" Width="94"/>
+        <Label Content="Call" HorizontalAlignment="Left" Margin="406,368,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Height="36" Width="43"/>
+        <Label Content="Tourism" HorizontalAlignment="Left" Margin="53,544,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Height="35" Width="92"/>
+        <Label Content="Events" HorizontalAlignment="Left" Margin="221,544,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Height="35" Width="86"/>
+        <Label Content="Religion" HorizontalAlignment="Left" Margin="382,544,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" Height="36" Width="96"/>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
+        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
+        <Image HorizontalAlignment="Left" Height="64" Margin="188,597,0,0" VerticalAlignment="Top" Width="146" Source="/LogoTransparentCropped.png"/>
+        <Button x:Name="Logout" HorizontalAlignment="Left" Margin="452,599,0,0" VerticalAlignment="Top" Height="51" Click="openMainWindow">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Height="46" Stretch="Fill" Source="/logout.png" Width="66" Margin="0,-5,0,3"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
     </Grid>
 </Window>

@@ -5,20 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="MainWindow" Height="520" Width="400" SizeToContent="WidthAndHeight" ResizeMode="NoResize">
-    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="400" Height="520">
-        <Image x:Name="MainScreenImage" HorizontalAlignment="Center" VerticalAlignment="Top" Source="/calgary-tower.jpg" RenderTransformOrigin="0.5,0.491" Stretch="UniformToFill" StretchDirection="Both" Width="778" Height="520"/>
-        <Label x:Name="Welcome_message" Content="I am here to help!" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontFamily="Ink Free"/>
-        <Button x:Name="LangSelec_1" Content="Press here for English" HorizontalAlignment="Center" Margin="0,144,0,0" VerticalAlignment="Top" FontSize="22" Click="OpenLoginOptions">
-        </Button>
-        <Button x:Name="LangSelect_2" Content="हिंदी के लिए यहां दबाएं" HorizontalAlignment="Center" VerticalAlignment="Top" Click="Button_Click" FontSize="22" Margin="0,226,0,0"/>
-        <Button x:Name="langSelec_3" Content="اردو کے لئے یہاں دبائیں" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <Button x:Name="langSelec_4" Content="点击这里查看普通话" HorizontalAlignment="Center" Margin="0,398,0,0" VerticalAlignment="Top" FontSize="22"/>
-        <ScrollBar x:Name="scroll_lang" HorizontalAlignment="Left" Margin="373,77,0,0" VerticalAlignment="Top" Height="377" ValueChanged="scroll_lang_ValueChanged"/>
-        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="200,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="324,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="248,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
-        <Grid Height="520" Width="400"/>
+        Title="MainWindow" Height="650" SizeToContent="WidthAndHeight" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Width="520" Height="650">
+        <Image x:Name="MainScreenImage" HorizontalAlignment="Left" Source="/calgary-tower.jpg" RenderTransformOrigin="0.5,0.491" Stretch="UniformToFill" StretchDirection="Both" Width="936" Margin="-338,-16,0,-42"/>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
+        <Grid Height="650" Width="520">
+            <ScrollBar x:Name="scroll_lang" HorizontalAlignment="Left" Margin="473,163,0,0" VerticalAlignment="Top" Height="447" ValueChanged="scroll_lang_ValueChanged"/>
+            <Label x:Name="Welcome_message" Content="I am here to help!" HorizontalAlignment="Left" Margin="117,99,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontFamily="Ink Free"/>
+            <Button x:Name="LangSelec_1" Content="Press here for English" HorizontalAlignment="Left" Margin="162,222,0,0" VerticalAlignment="Top" FontSize="22" Click="OpenLoginOptions"/>
+            <Button x:Name="LangSelect_2" Content="हिंदी के लिए यहां दबाएं" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click" FontSize="22" Margin="169,304,0,0"/>
+            <Button x:Name="langSelec_3" Content="اردو کے لئے یہاں دبائیں" HorizontalAlignment="Left" Margin="170,388,0,0" VerticalAlignment="Top" FontSize="22"/>
+            <Button x:Name="langSelec_4" Content="点击这里查看普通话" HorizontalAlignment="Left" Margin="167,476,0,0" VerticalAlignment="Top" FontSize="22"/>
+            <Image HorizontalAlignment="Left" Height="64" Margin="195,590,0,0" VerticalAlignment="Top" Width="147" Source="/LogoTransparentCropped.png"/>
+        </Grid>
+        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
     </Grid>
 </Window>

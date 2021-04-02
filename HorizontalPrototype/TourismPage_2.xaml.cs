@@ -21,5 +21,19 @@ namespace HorizontalPrototype
         {
             InitializeComponent();
         }
+
+        private void openTourism1(object sender, RoutedEventArgs e)
+        {
+            TourismPage_1 tourism1 = new TourismPage_1();
+            this.Visibility = Visibility.Hidden;
+            tourism1.Show();
+        }
+
+        private void openWindow1(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            this.Visibility = Visibility.Hidden;
+            window1.Show();
+        }
     }
 }

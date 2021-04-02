@@ -1,0 +1,46 @@
+﻿<Window x:Class="HorizontalPrototype.EventsFestivals"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HorizontalPrototype"
+        mc:Ignorable="d"
+        Title="EventsFestivals" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Width="520" Height="650">
+        <ScrollViewer x:Name="Events" Margin="10,51,10,95"/>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="180" Margin="39,74,0,0" VerticalAlignment="Top" Width="445">
+            <Image Margin="10,34,278,9" Source="/trumpet.png"/>
+        </Border>
+        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="180" Margin="39,259,0,0" VerticalAlignment="Top" Width="445">
+            <Label Content="Home Free Vocal" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Height="31" Width="194" FontSize="16" Margin="9,9,0,0"/>
+        </Border>
+        <Label Content="Herp Alpert" HorizontalAlignment="Left" Margin="49,74,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="31" Width="148" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="251,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="220" Text="Details: Details about the event go here. " FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="251,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="214" FontSize="14"><Run Language="en-ca" Text="Date and Time"/><Run Text=": "/><Run Language="en-ca" Text="March 29, 2021 @"/><Run Text=" "/><Run Text="9 AM to 11 PM"/><LineBreak/><Run/></TextBlock>
+        <Image Margin="60,292,334,210" Source="/mic.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="251,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="38" Width="203" Text="Details: Details about the event go here " FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="251,349,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="214" FontSize="14"><Run Text="Date and Time"/><Run Text=": "/><Run Language="en-ca" Text="April 5"/><Run Text=", 2021 @"/><Run Text=" "/><Run Language="en-ca" Text="8"/><Run Text=" AM to "/><Run Language="en-ca" Text="3"/><Run Text=" PM"/><LineBreak/><Run/></TextBlock>
+        <Button Content="Get Tickets" HorizontalAlignment="Left" Margin="300,220,0,0" VerticalAlignment="Top" FontSize="16" Width="104"/>
+        <Button Content="Get Tickets" HorizontalAlignment="Left" Margin="300,400,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.51,0.587" FontSize="16" Width="104"/>
+        <Image HorizontalAlignment="Center" Height="64" Margin="0,595,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
+        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
+        <Button x:Name="GoBack" HorizontalAlignment="Left" Margin="10,560,0,0" VerticalAlignment="Top" Height="70" Width="63" Click="openEvents">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Height="70" Stretch="UniformToFill" Source="/previous.png" Width="66" Margin="0,0,0,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="GoMainWindow" HorizontalAlignment="Left" Margin="424,560,0,0" VerticalAlignment="Top" Height="70" Click="openWindow1" Width="62">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Height="70" Stretch="UniformToFill" Source="/home.png" Width="66" Margin="-5,0,-4,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+    </Grid>
+</Window>

@@ -5,29 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="TourismPage_1" Height="520" Width="400">
-    <Grid>
-        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
-        <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <TextBox TextWrapping="Wrap" Margin="0,54,0,412" Text="Choose what interests you!" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" FontStyle="Italic" BorderThickness="2.5" TextAlignment="Center" HorizontalAlignment="Center" Width="298"/>
-        <Image Height="100" Width="100" Margin="23,125,277,279" Source="/naturalArea.png"/>
-        <Image Height="100" Width="100" Margin="138,129,162,275" Source="/winterSports.png"/>
-        <Image Margin="278,131,40,285" Source="/heritage.png"/>
-        <Image Height="100" Width="100" Margin="30,252,270,152" Source="/festive.png"/>
-        <Image Height="100" Width="100" Margin="155,252,145,152" Source="/parade.png"/>
-        <Image Height="100" Width="100" Margin="269,252,31,152" Source="/architecture.png"/>
-        <Image Margin="172,395,162,39" Source="/viewAll.png"/>
-        <Label Content="Natural Areas" HorizontalAlignment="Left" Margin="29,221,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Adventure Sports" HorizontalAlignment="Left" Margin="139,221,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Culture and Heritage" HorizontalAlignment="Left" Margin="259,221,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Festivals" HorizontalAlignment="Left" Margin="44,352,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Parades" HorizontalAlignment="Left" Margin="178,352,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="Architecture" HorizontalAlignment="Left" Margin="292,357,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="View All" HorizontalAlignment="Left" Margin="176,468,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Image HorizontalAlignment="Left" Height="29" Margin="10,466,0,0" VerticalAlignment="Top" Width="46" Source="/previous.png"/>
-        <Image HorizontalAlignment="Left" Height="31" Margin="353,466,0,0" VerticalAlignment="Top" Width="43" Source="/home.png"/>
+        Title="TourismPage_1" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Width="520" Height="650">
+        <TextBox TextWrapping="Wrap" Margin="0,69,0,544" Text="Choose what interests you!" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" FontStyle="Italic" BorderThickness="2.5" TextAlignment="Center" HorizontalAlignment="Center" Width="298"/>
+        <Image Height="100" Width="100" Margin="29,125,391,425" Source="/naturalArea.png"/>
+        <Image Margin="129,110,270,415" Source="/winterSports.png"/>
+        <Image Margin="285,115,141,426" Source="/heritage.png"/>
+        <Image Height="100" Width="100" Margin="29,275,391,275" Source="/festive.png" MouseDown="openTourismPage_2"/>
+        <Image Height="100" Width="100" Margin="148,289,272,261" Source="/parade.png"/>
+        <Image Height="100" Width="100" Margin="404,113,16,437" Source="/architecture.png"/>
+        <Image HorizontalAlignment="Center" Height="64" Margin="0,595,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
+        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
+        <Button x:Name="GoBack" HorizontalAlignment="Left" Margin="10,560,0,0" VerticalAlignment="Top" Height="70" Width="63" Click="openWindow1">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Height="70" Stretch="UniformToFill" Source="/previous.png" Width="66" Margin="0,0,0,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="27,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="104" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Natural Areas"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="162,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="86" FontSize="16" FontWeight="Bold" Text="Adventure Sports"/>
+        <TextBlock HorizontalAlignment="Left" Margin="280,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="104" FontSize="16" FontWeight="Bold"><Run Text="Cultural"/><Run Language="en-ca" Text=" and "/><Run Text="Heritage"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="402,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="104" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Architecture"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="46,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="66" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Festivals"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="165,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="66" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Parades"/></TextBlock>
 
     </Grid>
 </Window>

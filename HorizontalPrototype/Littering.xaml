@@ -1,0 +1,46 @@
+﻿<Window x:Class="HorizontalPrototype.Littering"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HorizontalPrototype"
+        mc:Ignorable="d"
+        Title="Littering" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Width="520" Height="650">
+        <Label x:Name="date_Copy" Content="ByLaws related to littering" HorizontalAlignment="Left" Margin="12,62,0,0" VerticalAlignment="Top" FontStyle="Italic" FontWeight="Bold" FontSize="24" Height="52" Width="446"/>
+        <Label x:Name="date_Copy1" Content="- Improper disposal of burning material" HorizontalAlignment="Left" Margin="12,121,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="39" Width="446"/>
+        <Label x:Name="date_Copy2" Content="will result in higher fine." HorizontalAlignment="Left" Margin="29,159,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="40" Width="279"/>
+        <Label x:Name="date_Copy3" Content="- Waste must not be disposed off on public " HorizontalAlignment="Left" Margin="6,227,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="39" Width="490"/>
+        <Label x:Name="date_Copy4" Content="property aside from in a bin " HorizontalAlignment="Left" Margin="29,261,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="39" Width="326"/>
+        <Label x:Name="date_Copy5" Content="- Fines:  $500 - $1000 " HorizontalAlignment="Left" Margin="12,322,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="39" Width="253"/>
+        <Button x:Name="QRButton" Margin="200,383,200,179">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image x:Name="mapIcon" Source="/qr-code.png"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label x:Name="date_Copy6" Content="QR" HorizontalAlignment="Center" Margin="0,476,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" RenderTransformOrigin="1.321,0.69" Height="39" Width="48"/>
+        <Label x:Name="date_Copy7" Content="Scan to read more" HorizontalAlignment="Center" Margin="0,496,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="38" Width="152"/>
+        <Image HorizontalAlignment="Center" Height="64" Margin="0,595,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
+        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
+        <Button x:Name="GoBack" HorizontalAlignment="Left" Margin="10,560,0,0" VerticalAlignment="Top" Height="70" Click="openByLaws" Width="63">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Height="70" Stretch="UniformToFill" Source="/previous.png" Width="66" Margin="0,0,0,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="GoMainWindow" Content="Button" HorizontalAlignment="Left" Margin="436,560,0,0" VerticalAlignment="Top" Click="openWindow1">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Height="70" Stretch="UniformToFill" Source="/home.png" Width="66" Margin="0,0,0,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+    </Grid>
+</Window>
