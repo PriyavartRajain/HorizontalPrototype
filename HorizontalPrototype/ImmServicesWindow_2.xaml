@@ -5,27 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="ImmServicesWindow_2" Height="520" Width="400">
-    <Grid>
-        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
-        <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <TextBox TextWrapping="Wrap" Margin="0,54,0,412" Text="Documents you must prepare" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" FontStyle="Italic" BorderThickness="2.5" TextAlignment="Center" HorizontalAlignment="Center" Width="298"/>
-        <Button Content="Study Permit" HorizontalAlignment="Left" Margin="51,109,0,0" VerticalAlignment="Top" Height="41" Width="116" FontWeight="Bold"/>
-        <Button Content="Health Card" HorizontalAlignment="Left" Margin="51,167,0,0" VerticalAlignment="Top" Height="41" Width="116" FontWeight="Bold"/>
-        <TextBox TextWrapping="Wrap" Margin="50,285,0,181" Text="Documents we recommend" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" FontStyle="Italic" BorderThickness="2.5" TextAlignment="Center" HorizontalAlignment="Left" Width="298"/>
-        <Label Content="1>" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="2>" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="3>" HorizontalAlignment="Left" Margin="10,226,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Button Content="------------" HorizontalAlignment="Left" Margin="51,226,0,0" VerticalAlignment="Top" Height="41" Width="116" FontWeight="Bold"/>
-        <Button Content="------------" HorizontalAlignment="Left" Margin="51,342,0,0" VerticalAlignment="Top" Height="41" Width="116" FontWeight="Bold"/>
-        <Button Content="------------" HorizontalAlignment="Left" Margin="51,403,0,0" VerticalAlignment="Top" Height="41" Width="116" FontWeight="Bold"/>
-        <Label Content="1>" HorizontalAlignment="Left" Margin="10,350,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Label Content="2>" HorizontalAlignment="Left" Margin="10,411,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Button Content="View More" HorizontalAlignment="Center" Margin="0,466,0,0" VerticalAlignment="Top" Height="28" Width="77"/>
-        <Image HorizontalAlignment="Left" Height="37" Margin="10,457,0,0" VerticalAlignment="Top" Width="52" Source="/previous.png"/>
-        <Image HorizontalAlignment="Left" Height="37" Margin="347,457,0,0" VerticalAlignment="Top" Width="52" Source="/home.png"/>
+        Title="ImmServicesWindow_2" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" SizeToContent="WidthAndHeight">
+    <Grid Width="520" Height="650">
+        <TextBox TextWrapping="Wrap" Margin="0,54,0,558" Text="Documents you must prepare" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" FontStyle="Italic" BorderThickness="2.5" TextAlignment="Center" HorizontalAlignment="Center" Width="298"/>
+        <Button Content="Study Permit" HorizontalAlignment="Left" Margin="53,109,0,0" VerticalAlignment="Top" Height="43" Width="120" FontWeight="Bold"/>
+        <Button Content="Health Card" HorizontalAlignment="Left" Margin="53,169,0,0" VerticalAlignment="Top" Height="43" Width="120" FontWeight="Bold" Click="openImmServWindow3"/>
+        <TextBox TextWrapping="Wrap" Margin="0,285,0,325" Text="Documents we recommend" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" FontStyle="Italic" BorderThickness="2.5" TextAlignment="Center" HorizontalAlignment="Center" Width="298"/>
+        <Label Content="1>" HorizontalAlignment="Left" Margin="10,117,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="27" Width="26"/>
+        <Label Content="2>" HorizontalAlignment="Left" Margin="10,172,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="27" Width="26"/>
+        <Label Content="3>" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="27" Width="26"/>
+        <Button Content="------------" HorizontalAlignment="Left" Margin="53,231,0,0" VerticalAlignment="Top" Height="42" Width="120" FontWeight="Bold"/>
+        <Button Content="------------" HorizontalAlignment="Left" Margin="53,351,0,0" VerticalAlignment="Top" Height="43" Width="120" FontWeight="Bold"/>
+        <Button Content="------------" HorizontalAlignment="Left" Margin="53,414,0,0" VerticalAlignment="Top" Height="43" Width="120" FontWeight="Bold"/>
+        <Label Content="1>" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="27" Width="26"/>
+        <Label Content="2>" HorizontalAlignment="Left" Margin="10,423,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="27" Width="26"/>
+        <Image HorizontalAlignment="Center" Height="64" Margin="0,595,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
+        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
+        <Button x:Name="GoBack" HorizontalAlignment="Left" Margin="10,560,0,0" VerticalAlignment="Top" Height="70" Click="openImmServWindow1" Width="63">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Height="70" Stretch="UniformToFill" Source="/previous.png" Width="66" Margin="0,0,0,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="GoMainWindow_Copy" Content="Button" HorizontalAlignment="Left" Margin="424,560,0,0" VerticalAlignment="Top" Click="openWindow1">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Height="70" Stretch="UniformToFill" Source="/home.png" Width="66" Margin="0,0,0,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
 
     </Grid>
 </Window>

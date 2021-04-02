@@ -8,29 +8,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace HorizontalPrototype
 {
     /// <summary>
-    /// Interaction logic for MapPage.xaml
+    /// Interaction logic for Housing.xaml
     /// </summary>
-    public partial class MapPage : Page
+    public partial class Housing : Window
     {
-        public MapPage()
+        public Housing()
         {
             InitializeComponent();
         }
 
-        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void openWindow1(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void ExploreComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            
+            Window1 window1 = new Window1();
+            this.Visibility = Visibility.Hidden;
+            window1.Show();
         }
     }
 }

@@ -10,16 +10,23 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace Transit
+namespace HorizontalPrototype
 {
     /// <summary>
-    /// Interaction logic for Transit1.xaml
+    /// Interaction logic for CollectChange.xaml
     /// </summary>
-    public partial class Transit1 : Window
+    public partial class CollectChange : Window
     {
-        public Transit1()
+        public CollectChange()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            this.Visibility = Visibility.Hidden;
+            window1.Show();
         }
     }
 }

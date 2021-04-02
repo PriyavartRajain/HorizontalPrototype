@@ -26,5 +26,12 @@ namespace HorizontalPrototype
         {
 
         }
+
+        private void openLoginScreen(object sender, RoutedEventArgs e)
+        {
+            LoginScreen loginScreen = new LoginScreen();
+            this.Visibility = Visibility.Hidden;
+            loginScreen.Show();
+        }
     }
 }

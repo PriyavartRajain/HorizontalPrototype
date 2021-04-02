@@ -21,5 +21,17 @@ namespace HorizontalPrototype
         {
             InitializeComponent();
         }
+
+        private void ExploreComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
+
+        private void openWindow1(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            this.Visibility = Visibility.Hidden;
+            window1.Show();
+        }
     }
 }
