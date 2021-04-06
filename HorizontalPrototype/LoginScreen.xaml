@@ -17,17 +17,14 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Button x:Name="Sign_Up_Button" Content="Sign Up for a personalized experience!" HorizontalAlignment="Center" Margin="0,165,0,0" VerticalAlignment="Top" Height="36" Width="362" Background="#FFB7EDE7" FontWeight="Bold" FontFamily="Arial Black" FontSize="16" Click="OpenSignUp"/>
+        <Button x:Name="Sign_Up_Button" Content="Sign Up!" HorizontalAlignment="Center" Margin="0,165,0,0" VerticalAlignment="Top" Height="36" Width="96" Background="#FFB7EDE7" FontWeight="Bold" FontFamily="Arial Black" FontSize="16" Click="OpenSignUp"/>
         <Label Content="Never used the kiosk before?" HorizontalAlignment="Left" Margin="132,123,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="46" Width="270" FontSize="18" FontStyle="Italic"/>
-        <Button x:Name="Log_InButton" Content="Log In!" HorizontalAlignment="Center" Margin="0,307,0,0" VerticalAlignment="Top" Height="36" Width="84" Background="#FFB7EDE7" FontWeight="Bold" FontFamily="Arial Black" FontSize="16" Click="openLogin"/>
-        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="36" Margin="0,124,0,0" VerticalAlignment="Top" Width="260"/>
-        <Label Content="   In a rush?" HorizontalAlignment="Center" Margin="0,402,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="37" Width="104" Background="White" FontStyle="Italic"/>
-        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="37" Margin="0,402,0,0" VerticalAlignment="Top" Width="104"/>
+        <Button x:Name="Log_InButton" Content="Log In!" HorizontalAlignment="Center" Margin="0,307,0,0" VerticalAlignment="Top" Height="36" Width="96" Background="#FFB7EDE7" FontWeight="Bold" FontFamily="Arial Black" FontSize="16" Click="openLogin"/>
+        <Label Content="   In a rush?" HorizontalAlignment="Center" Margin="0,402,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Height="37" Width="124" Background="White" FontStyle="Italic"/>
         <Button x:Name="Log_InButton_Copy" Content="Use as Guest!" HorizontalAlignment="Center" Margin="0,444,0,0" VerticalAlignment="Top" Height="36" Width="160" Background="#FFB7EDE7" FontWeight="Bold" FontFamily="Arial Black" FontSize="16" Click="openHome"/>
         <Image x:Name="cloud" HorizontalAlignment="Left" Height="64" Margin="34,95,0,0" VerticalAlignment="Top" Width="78" Source="/cloud.png"/>
         <Image x:Name="cloud_Copy" HorizontalAlignment="Left" Height="65" Margin="386,335,0,0" VerticalAlignment="Top" Width="78" Source="/cloud.png"/>
-        <Label Content=" Already have a username?" HorizontalAlignment="Center" Margin="0,265,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Height="37" Width="223" Background="White" FontStyle="Italic"/>
-        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="37" Margin="0,265,0,0" VerticalAlignment="Top" Width="222"/>
+        <Label Content=" Already have an account?" HorizontalAlignment="Center" Margin="0,265,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="18" Height="37" Width="238" Background="White" FontStyle="Italic"/>
         <Image HorizontalAlignment="Center" Height="64" Margin="0,587,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
         <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
         <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
