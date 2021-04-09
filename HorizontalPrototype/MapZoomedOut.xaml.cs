@@ -13,20 +13,20 @@ using System.Windows.Shapes;
 namespace HorizontalPrototype
 {
     /// <summary>
-    /// Interaction logic for ImmServicesWindow_3.xaml
+    /// Interaction logic for MapZoomedOut.xaml
     /// </summary>
-    public partial class ImmServicesWindow_3 : Window
+    public partial class MapZoomedOut : Window
     {
-        public ImmServicesWindow_3()
+        public MapZoomedOut()
         {
             InitializeComponent();
         }
 
-        private void openImmServWindow2(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ImmServicesWindow_2 immServicesWindow2 = new ImmServicesWindow_2();
+            MapZoomedIn mapZoomedIn = new MapZoomedIn();
             this.Visibility = Visibility.Hidden;
-            immServicesWindow2.Show();
+            mapZoomedIn.Show();
         }
 
         private void openWindow1(object sender, RoutedEventArgs e)
@@ -36,11 +36,9 @@ namespace HorizontalPrototype
             window1.Show();
         }
 
-        private void openImmServWindow5(object sender, RoutedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            ImmServicesWindow_5 immServicesWindow5 = new ImmServicesWindow_5();
-            this.Visibility = Visibility.Hidden;
-            immServicesWindow5.Show();
+
         }
     }
 }

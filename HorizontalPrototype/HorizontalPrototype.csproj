@@ -56,8 +56,11 @@
     <None Remove="park.png" />
     <None Remove="passport.png" />
     <None Remove="phone-call.png" />
+    <None Remove="pin.png" />
     <None Remove="previous.png" />
     <None Remove="qr-code.png" />
+    <None Remove="registry2.PNG" />
+    <None Remove="registry_locations.PNG" />
     <None Remove="relegion.png" />
     <None Remove="search.png" />
     <None Remove="Shikhism.png" />
@@ -74,6 +77,8 @@
     <None Remove="winterSports.png" />
     <None Remove="work-tools.png" />
     <None Remove="Zoo-Lights.jpg" />
+    <None Remove="zoomedIn.PNG" />
+    <None Remove="zoomedOut.PNG" />
   </ItemGroup>
 
   <ItemGroup>
@@ -137,8 +142,11 @@
     <Resource Include="park.png" />
     <Resource Include="passport.png" />
     <Resource Include="phone-call.png" />
+    <Resource Include="pin.png" />
     <Resource Include="previous.png" />
     <Resource Include="qr-code.png" />
+    <Resource Include="registry2.PNG" />
+    <Resource Include="registry_locations.PNG" />
     <Resource Include="relegion.png" />
     <Resource Include="search.png" />
     <Resource Include="Shikhism.png" />
@@ -155,6 +163,8 @@
     <Resource Include="winterSports.png" />
     <Resource Include="work-tools.png" />
     <Resource Include="Zoo-Lights.jpg" />
+    <Resource Include="zoomedIn.PNG" />
+    <Resource Include="zoomedOut.PNG" />
   </ItemGroup>
 
 </Project>

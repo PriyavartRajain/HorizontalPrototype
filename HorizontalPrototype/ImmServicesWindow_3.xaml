@@ -16,7 +16,7 @@
         <Button Content="Print" HorizontalAlignment="Left" Margin="238,360,0,0" VerticalAlignment="Top" Height="23" Width="62" FontSize="16"/>
         <Label Content="Proof you are allowed to live in Canada" HorizontalAlignment="Left" Margin="168,435,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="Where to get:  " HorizontalAlignment="Left" Margin="20,484,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontStyle="Normal"/>
-        <Button Content="Alberta Registry Locations" HorizontalAlignment="Left" Height="25" Margin="167,521,0,0" VerticalAlignment="Top" Width="204" FontSize="16"/>
+        <Button Content="Alberta Registry Locations" HorizontalAlignment="Left" Height="25" Margin="167,521,0,0" VerticalAlignment="Top" Width="204" FontSize="16" Click="openImmServWindow5"/>
         <Image HorizontalAlignment="Center" Height="64" Margin="0,595,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
         <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
         <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
