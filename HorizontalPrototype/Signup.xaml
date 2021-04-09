@@ -1,0 +1,32 @@
+﻿<Window x:Class="HorizontalPrototype.Signup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HorizontalPrototype"
+        mc:Ignorable="d"
+        Title="Signup" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Width="520" Height="650">
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
+        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
+        <Image RenderTransformOrigin="0.5,0.5" Source="/logInScreen.png" Margin="0,236,0,-236">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.238"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="cloud" HorizontalAlignment="Left" Height="64" Margin="34,95,0,0" VerticalAlignment="Top" Width="78" Source="/cloud.png"/>
+        <Image x:Name="cloud_Copy" HorizontalAlignment="Left" Height="65" Margin="386,335,0,0" VerticalAlignment="Top" Width="78" Source="/cloud.png"/>
+        <Image HorizontalAlignment="Center" Height="64" Margin="0,587,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
+        <Button Content="OK" FontWeight="DemiBold" FontSize="18" HorizontalAlignment="Center" Margin="0,304,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.061,0.586" Width="84" Click="Button_Click" Background="#FF73F766"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"><Run Language="en-ca" Text="Signup successful!"/></TextBlock>
+        <TextBox HorizontalAlignment="Center" Margin="0,231,0,0" Text="Please use your new username and password to log in.&#xD;&#xA;" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18" BorderThickness="0,0,0,0"/>
+
+    </Grid>
+</Window>

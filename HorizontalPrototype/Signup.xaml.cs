@@ -13,32 +13,25 @@ using System.Windows.Shapes;
 namespace HorizontalPrototype
 {
     /// <summary>
-    /// Interaction logic for Call.xaml
+    /// Interaction logic for Signup.xaml
     /// </summary>
-    public partial class Call : Window
+    public partial class Signup : Window
     {
-        public Call()
+        public Signup()
         {
             InitializeComponent();
         }
 
-        private void openWindow1(object sender, RoutedEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            Window1 window1 = new Window1();
-            this.Visibility = Visibility.Hidden;
-            window1.Show();
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            CallPersonal callPersonal = new CallPersonal();
+            LoginScreen_3 openLogin = new LoginScreen_3();
             this.Visibility = Visibility.Hidden;
-            callPersonal.Show();
-        }
-
-        private void Slider_ValueChanged()
-        {
-
+            openLogin.Show();
         }
     }
 }
