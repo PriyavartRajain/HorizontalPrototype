@@ -13,14 +13,15 @@ using System.Windows.Shapes;
 namespace HorizontalPrototype
 {
     /// <summary>
-    /// Interaction logic for ReligionChristianityzoomin.xaml
+    /// Interaction logic for Housing.xaml
     /// </summary>
-    public partial class ReligionChristianityzoomin : Window
+    public partial class Housing : Window
     {
-        public ReligionChristianityzoomin()
+        public Housing()
         {
             InitializeComponent();
         }
+
         private void openWindow1(object sender, RoutedEventArgs e)
         {
             Window1 window1 = new Window1();
@@ -28,36 +29,37 @@ namespace HorizontalPrototype
             window1.Show();
         }
 
-
-
         private void goback(object sender, RoutedEventArgs e)
         {
-            ReligionChristianity openfestival = new ReligionChristianity();
+            Window1 window1 = new Window1();
             this.Visibility = Visibility.Hidden;
-            openfestival.Show();
+            window1.Show();
+
+        }
+
+        private void showhouse(object sender, RoutedEventArgs e)
+        {
+           housing2 window2 = new housing2();
+            this.Visibility = Visibility.Hidden;
+            window2.Show();
+        }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            search.Visibility = Visibility.Hidden;
+           
+
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ReligionChristianity mapZoomedOut = new ReligionChristianity();
-            this.Visibility = Visibility.Hidden;
-            mapZoomedOut.Show();
+       
         }
-<<<<<<< HEAD
-     
-        private void showreligion(object sender, RoutedEventArgs e)
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            ReligionChristianity2 religion = new ReligionChristianity2();
+            Housingzoomin mapZoomedIn = new Housingzoomin();
             this.Visibility = Visibility.Hidden;
-            religion.Show();
+            mapZoomedIn.Show();
         }
-
-
-=======
-
-     
->>>>>>> a4d45d2938f49fdbc7c72f0376683190e1baac2e
-
-
 
     }
 }
