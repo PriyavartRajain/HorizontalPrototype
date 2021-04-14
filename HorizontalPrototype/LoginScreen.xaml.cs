@@ -21,5 +21,34 @@ namespace HorizontalPrototype
         {
             InitializeComponent();
         }
+
+        private void openHome(object sender, RoutedEventArgs e)
+        {
+            Window openHome = new Window1();
+            this.Visibility = Visibility.Hidden;
+            openHome.Show();
+        }
+
+        private void OpenSignUp(object sender, RoutedEventArgs e)
+        {
+            LoginScreen_2 openSignUp = new LoginScreen_2();
+            this.Visibility = Visibility.Hidden;
+            openSignUp.Show();
+        }
+
+
+        private void openLogin(object sender, RoutedEventArgs e)
+        {
+            LoginScreen_3 openLogin = new LoginScreen_3();
+            this.Visibility = Visibility.Hidden;
+            openLogin.Show();
+        }
+
+        private void openMainWindow(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Visibility = Visibility.Hidden;
+            mainWindow.Show();
+        }
     }
 }

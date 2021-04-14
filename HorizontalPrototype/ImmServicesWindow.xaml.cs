@@ -21,5 +21,24 @@ namespace HorizontalPrototype
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void openWindow1(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            this.Visibility = Visibility.Hidden;
+            window1.Show();
+        }
+
+        private void openImmServWindow2(object sender, RoutedEventArgs e)
+        {
+            ImmServicesWindow_2 immServicesWindow2 = new ImmServicesWindow_2();
+            this.Visibility = Visibility.Hidden;
+            immServicesWindow2.Show();
+        }
     }
 }

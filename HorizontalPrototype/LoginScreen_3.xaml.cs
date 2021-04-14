@@ -26,5 +26,52 @@ namespace HorizontalPrototype
         {
 
         }
+
+        private void openLoginScreen(object sender, RoutedEventArgs e)
+        {
+            LoginScreen loginScreen = new LoginScreen();
+            this.Visibility = Visibility.Hidden;
+            loginScreen.Show();
+        }
+
+        private void Username_GotFocus(object sender, RoutedEventArgs e)
+        {
+            if (Username.Text == "Enter username here")
+            {
+                Username.Clear();
+            }
+        }
+
+        private void Username_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (Username.Text == "" | Username.Text == null)
+            {
+                Username.Text = "Enter username here";
+            }
+        }
+
+
+        private void PasswordBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            Password.Opacity = 0;
+            PasswordBox.Opacity = 100;
+
+        }
+
+        private void PasswordBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            if (PasswordBox.Password == "")
+            {
+                Password.Opacity = 100;
+                PasswordBox.Opacity = 0;
+            }
+        }
+
+        private void Sign_upButton_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            this.Visibility = Visibility.Hidden;
+            window1.Show();
+        }
     }
 }

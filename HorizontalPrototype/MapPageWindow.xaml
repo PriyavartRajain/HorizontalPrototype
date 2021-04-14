@@ -5,16 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="MapPageWindow" Height="520" Width="400">
-    <Grid>
-        <Image x:Name="citymap_1" HorizontalAlignment="Center" Height="516" VerticalAlignment="Center" Width="424" Source="/map1.PNG"/>
-        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
-        <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Image x:Name="search" HorizontalAlignment="Left" Height="181" Margin="-14,-19,0,0" VerticalAlignment="Top" Width="264" Source="/search.png"/>
+        Title="MapPageWindow" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Width="520" Height="650">
+        <Image x:Name="citymap_1" HorizontalAlignment="Center" Height="656" VerticalAlignment="Center" Width="539" Source="/map1.PNG"/>
         <Image x:Name="man" HorizontalAlignment="Left" Height="50" Margin="49,363,0,0" VerticalAlignment="Top" Width="49" Source="/man.png"/>
-        <ComboBox x:Name="ExploreComboBox" Width="127" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="15,83,0,0" IsDropDownOpen="True">
+        <ComboBox x:Name="ExploreComboBox" Width="174" Height="28" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="35,120,0,0" IsDropDownOpen="True" SelectionChanged="ExploreComboBox_SelectionChanged">
             <ComboBoxItem Content="Hotels"></ComboBoxItem>
             <ComboBoxItem Content="Restaurants"></ComboBoxItem>
             <ComboBoxItem Content="Recreation"></ComboBoxItem>
@@ -24,11 +19,31 @@
             <ComboBoxItem Content="Police Stations"></ComboBoxItem>
             <ComboBoxItem Content="Gas Stations"></ComboBoxItem>
         </ComboBox>
-        <Label Content="Explore!" HorizontalAlignment="Left" Margin="15,81,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
-        <Button Content="Zoom In" HorizontalAlignment="Left" Margin="319,373,0,0" VerticalAlignment="Top" Width="65"/>
-        <Button Content="Zoom Out" HorizontalAlignment="Left" Margin="319,407,0,0" VerticalAlignment="Top" Width="65"/>
-        <Image HorizontalAlignment="Left" Height="37" Margin="15,444,0,0" VerticalAlignment="Top" Width="52" Source="/previous.png"/>
-        <Image HorizontalAlignment="Left" Height="37" Margin="347,444,0,0" VerticalAlignment="Top" Width="52" Source="/home.png"/>
+        <Label x:Name="explore" Content="Explore!" HorizontalAlignment="Left" Margin="41,116,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="32" Width="104" FontSize="18"/>
+        <Button Content="Zoom In" HorizontalAlignment="Left" Margin="388,557,0,0" VerticalAlignment="Top" Width="122" Height="27" FontSize="18" Click="Button_Click_1"/>
+        <Button Content="Zoom Out" HorizontalAlignment="Left" Margin="388,603,0,0" VerticalAlignment="Top" Width="122" Height="27" FontSize="18" Click="Button_Click"/>
+        <Image HorizontalAlignment="Center" Height="64" Margin="0,595,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
+        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
+        <Button x:Name="GoBack" HorizontalAlignment="Left" Margin="10,560,0,0" VerticalAlignment="Top" Height="70" Click="openWindow1" Width="63">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Height="70" Stretch="UniformToFill" Source="/previous.png" Width="66" Margin="0,0,0,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Image x:Name="holidayInnImg" HorizontalAlignment="Left" Height="29" Margin="404,134,0,0" VerticalAlignment="Top" Width="18" Source="/pin.png" Visibility="Hidden"/>
+        <Label x:Name="holidayInnLbl" Content="Holiday Inn" HorizontalAlignment="Left" Height="29" Margin="426,134,0,0" VerticalAlignment="Top" Width="84" FontWeight="Bold" Visibility="Hidden"/>
+        <Image x:Name="hotel2img" HorizontalAlignment="Left" Height="35" Margin="313,504,0,0" VerticalAlignment="Top" Width="23" Source="/pin.png" Visibility="Hidden"/>
+        <Label x:Name="hotel2lbl" Content="Hotel Delta" HorizontalAlignment="Left" Height="29" Margin="281,539,0,0" VerticalAlignment="Top" Width="84" FontWeight="Bold" Visibility="Hidden" RenderTransformOrigin="0.452,0.519"/>
+        <Image x:Name="hotel3img" HorizontalAlignment="Left" Height="37" Margin="51,253,0,0" VerticalAlignment="Top" Width="28" Source="/pin.png" Visibility="Hidden"/>
+        <Label x:Name="hotel3lbl" Content="Hotel Omega" HorizontalAlignment="Left" Height="29" Margin="20,296,0,0" VerticalAlignment="Top" Width="84" FontWeight="Bold" Visibility="Hidden" RenderTransformOrigin="0.452,0.519"/>
+
+        <TextBox HorizontalAlignment="Left" Margin="35,75,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="174" Height="30" TextChanged="TextBox_TextChanged" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="search" Content="Search" HorizontalAlignment="Left" Margin="42,75,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
 
     </Grid>
 </Window>

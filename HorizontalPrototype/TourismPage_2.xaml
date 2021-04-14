@@ -5,31 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="TourismPage_2" Height="520" Width="400">
-    <Grid>
-        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
-        <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="156" Margin="46,74,0,0" VerticalAlignment="Top" Width="302">
-            <Image Margin="9,34,214,34" Source="/CS.jpg"/>
-        </Border>
-        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="165" Margin="46,259,0,0" VerticalAlignment="Top" Width="302">
-            <Label Content="Lions Festival of Lights" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Height="31" Width="194" FontSize="16" Margin="9,9,0,0"/>
-        </Border>
-        <Label Content="Calgary Stampede" HorizontalAlignment="Left" Margin="52,80,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="31" Width="148" FontSize="16"/>
-        <TextBlock HorizontalAlignment="Left" Margin="152,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="181" Text="Details: Details about the event go here. "/>
-        <TextBlock HorizontalAlignment="Left" Margin="152,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="181"><Run Language="en-ca" Text="Hours"/><Run Text=": Monday to Friday"/></TextBlock>
-        <Image Margin="59,297,264,129" Source="/Zoo-Lights.jpg"/>
-        <TextBlock HorizontalAlignment="Left" Margin="152,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="181" Text="Details: Details about the event go here "/>
-        <TextBlock HorizontalAlignment="Left" Margin="152,338,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="181"><Run Language="en-ca" Text="Hours: Monday to Friday"/><Run Text=" "/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="152,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="18" Width="181"><Run Language="en-ca" Text="9 AM to 11 PM"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="152,359,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20" Width="181"><Run Language="en-ca" Text="8PM to 12 AM"/><Run Text=""/></TextBlock>
-        <Button Content="View More" HorizontalAlignment="Center" Margin="0,450,0,0" VerticalAlignment="Top"/>
-        <Button Content="Get Directions" HorizontalAlignment="Left" Margin="163,195,0,0" VerticalAlignment="Top"/>
-        <Button Content="Get Directions" HorizontalAlignment="Left" Margin="163,384,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.51,0.587"/>
-        <Image HorizontalAlignment="Left" Height="29" Margin="10,466,0,0" VerticalAlignment="Top" Width="46" Source="/previous.png"/>
-        <Image HorizontalAlignment="Left" Height="31" Margin="353,466,0,0" VerticalAlignment="Top" Width="43" Source="/home.png"/>
+        Title="TourismPage_2" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <ScrollViewer CanContentScroll="True">
+        <StackPanel>
+            <Grid Width="520" Height="650">
+                <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="180" Margin="39,74,0,0" VerticalAlignment="Top" Width="445">
+                    <Image Margin="9,34,240,9" Source="/CS.jpg"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="180" Margin="39,259,0,0" VerticalAlignment="Top" Width="445">
+                    <Label Content="Lions Festival of Lights" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Height="31" Width="194" FontSize="16" Margin="9,9,0,0"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="180" Margin="49,685,0,0" VerticalAlignment="Top" Width="445">
+                    <Label Content="Lions Festival of Lights" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Height="31" Width="194" FontSize="16" Margin="9,9,0,0"/>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Left" Height="180" Margin="39,259,0,0" VerticalAlignment="Top" Width="445">
+                    <Label Content="Lions Festival of Lights" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Height="31" Width="194" FontSize="16" Margin="9,9,0,0"/>
+                </Border>
+                <Label Content="Calgary Stampede" HorizontalAlignment="Left" Margin="49,74,0,0" VerticalAlignment="Top" FontWeight="Bold" Height="31" Width="148" FontSize="16"/>
+                <TextBlock HorizontalAlignment="Left" Margin="251,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="42" Width="220" Text="Details: Details about the event go here. " FontSize="14"/>
+                <TextBlock HorizontalAlignment="Left" Margin="251,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="214" FontSize="14"><Run Text="Hours"/><Run Text=": Monday to Friday"/><Run Language="en-ca" Text=" "/><Run Text="9 AM to 11 PM"/><LineBreak/><Run Language="en-ca"/></TextBlock>
+                <Image Margin="49,251,283,175" Source="/Zoo-Lights.jpg"/>
+                <TextBlock HorizontalAlignment="Left" Margin="251,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Height="38" Width="203" Text="Details: Details about the event go here " FontSize="14"/>
+                <TextBlock HorizontalAlignment="Left" Margin="251,349,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="214" FontSize="14"><Run Text="Hours: Monday to Friday"/><Run Language="en-ca" Text=" "/><Run Text="8PM to 12 AM"/><Run/><LineBreak/><Run Language="en-ca"/></TextBlock>
+                <Button Content="Get Directions" HorizontalAlignment="Left" Margin="300,220,0,0" VerticalAlignment="Top" FontSize="16"/>
+                <Button Content="Get Directions" HorizontalAlignment="Left" Margin="300,400,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.51,0.587" FontSize="16"/>
+                <Image HorizontalAlignment="Center" Height="64" Margin="0,595,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
+                <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
+                <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
+                <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
+                <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Left" Margin="227,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
+                <Button x:Name="GoBack" HorizontalAlignment="Left" Margin="10,560,0,0" VerticalAlignment="Top" Height="80" Width="63" Click="openTourism1">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Image Height="70" Stretch="UniformToFill" Source="/previous.png" Width="66" Margin="0,0,0,0"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="GoMainWindow" HorizontalAlignment="Left" Margin="440,560,0,0" VerticalAlignment="Top" Height="70" Click="openWindow1" Width="62">
+                    <Button.Template>
+                        <ControlTemplate>
+                            <Image Height="70" Stretch="UniformToFill" Source="/home.png" Width="66" Margin="-5,0,-4,0"/>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
 
-    </Grid>
+            </Grid>
+        </StackPanel>
+        
+    </ScrollViewer>
+
 </Window>

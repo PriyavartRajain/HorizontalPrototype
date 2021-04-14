@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="LoginScreen_3" Height="520" Width="400">
-    <Grid>
-        <Image Margin="-3,307,2,-52" RenderTransformOrigin="0.5,0.5" Source="/logInScreen.png">
+        Title="LoginScreen_3" SizeToContent="WidthAndHeight" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Width="520" Height="650">
+        <Image RenderTransformOrigin="0.5,0.5" Source="/logInScreen.png" Margin="0,236,0,-236">
             <Image.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,17 +17,27 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
-        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="172,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="220,10,0,0" VerticalAlignment="Top" Width="55" Source="/sun_PNG13427.png"/>
-        <Label x:Name="Day" Content="Tuesday" HorizontalAlignment="Left" Margin="313,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Image x:Name="cloud" HorizontalAlignment="Left" Height="64" Margin="24,196,0,0" VerticalAlignment="Top" Width="78" Source="/cloud.png"/>
-        <Image x:Name="cloud_Copy" HorizontalAlignment="Left" Height="65" Margin="303,267,0,0" VerticalAlignment="Top" Width="78" Source="/cloud.png"/>
-        <Label Content="Please enter your username:" HorizontalAlignment="Center" Margin="0,99,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Margin="73,135,0,0" Text=" Tap here and type your username" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Height="24" TextChanged="TextBox_TextChanged"/>
-        <Label Content="Please enter your password:" HorizontalAlignment="Center" Margin="0,177,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Margin="73,213,0,0" Text=" Tap here and type your password" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Height="24" TextChanged="TextBox_TextChanged"/>
-        <Button x:Name="Sign_upButton" Content="Log In!" HorizontalAlignment="Center" Margin="0,260,0,0" VerticalAlignment="Top" Height="36" Width="84" Background="#FFB7EDE7" FontWeight="Bold" FontFamily="Arial Black" FontSize="16"/>
+        <Button x:Name="Sign_upButton" Content="Log In!" HorizontalAlignment="Center" Margin="0,311,0,0" VerticalAlignment="Top" Height="36" Width="84" Background="#FFB7EDE7" FontWeight="Bold" FontFamily="Arial Black" FontSize="16" Click="Sign_upButton_Click"/>
+        <Image x:Name="cloud" HorizontalAlignment="Left" Height="64" Margin="34,95,0,0" VerticalAlignment="Top" Width="78" Source="/cloud.png"/>
+        <Image x:Name="cloud_Copy" HorizontalAlignment="Left" Height="65" Margin="386,335,0,0" VerticalAlignment="Top" Width="78" Source="/cloud.png"/>
+        <Image HorizontalAlignment="Center" Height="64" Margin="0,597,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
+        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
+        <Label Content="Username:" HorizontalAlignment="Center" Margin="0,124,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <TextBox x:Name="Username" HorizontalAlignment="Center" Margin="0,160,0,0" Text="Enter username here" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Height="24" TextChanged="TextBox_TextChanged" GotFocus="Username_GotFocus" LostFocus="Username_LostFocus"/>
+        <Label Content="Password:" HorizontalAlignment="Center" Margin="0,224,0,0" VerticalAlignment="Top" FontSize="16" FontWeight="Bold"/>
+        <Image HorizontalAlignment="Center" Height="64" Margin="0,597,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
+        <Button x:Name="GoBack" HorizontalAlignment="Left" Margin="10,570,0,0" VerticalAlignment="Top" Height="70" Click="openLoginScreen">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Height="70" Stretch="UniformToFill" Source="/previous.png" Width="66" Margin="0,-5,0,3"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBox x:Name="Password" HorizontalAlignment="Center" Margin="0,255,0,0" Text="Enter password here" TextWrapping="Wrap" VerticalAlignment="Top" Width="276" Height="24" TextChanged="TextBox_TextChanged"/>
+        <PasswordBox x:Name="PasswordBox" HorizontalAlignment="Center" Margin="0,255,0,0" VerticalAlignment="Top" Width="276" Height="24" Visibility="Visible" GotFocus="PasswordBox_GotFocus" Opacity="0" LostFocus="PasswordBox_LostFocus"/>
 
     </Grid>
 </Window>
