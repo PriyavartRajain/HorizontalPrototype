@@ -1,0 +1,43 @@
+﻿<Window x:Class="HorizontalPrototype.Religion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HorizontalPrototype"
+        mc:Ignorable="d"
+        Title="Religion" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Width="520" Height="650">
+        <Image HorizontalAlignment="Center" Height="64" Margin="0,595,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
+        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
+        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
+        <Button x:Name="GoBack" HorizontalAlignment="Left" Margin="10,560,0,0" VerticalAlignment="Top" Height="70" Click="openWindow1" Width="63">
+            <Button.Template>
+                <ControlTemplate>
+                    <Image Height="70" Stretch="UniformToFill" Source="/previous.png" Width="66" Margin="0,0,0,0"/>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Image Height="100" Width="100" Margin="29,125,391,425" Source="/Buddhism.png"/>
+        <Image Margin="146,140,270,425" Source="/Confucian.png"/>
+        <Image Margin="282,135,155,425" Source="/Christianity.png" MouseDown="openReligionChristianity"/>
+        <Image Height="100" Width="100" Margin="29,265,391,285" Source="/Islam.png"/>
+        <Image Height="100" Width="100" Margin="148,265,272,285" Source="/Judaism.png"/>
+        <Image Margin="406,138,25,422" Source="/Hinduism.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="36,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="86" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Buddhism"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="165,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="86" FontSize="16" FontWeight="Bold" Text="Confucian"/>
+        <TextBlock HorizontalAlignment="Left" Margin="279,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="89" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Christianity"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="410,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="82" FontSize="16" FontWeight="Bold" Text="Hinduism"/>
+        <TextBlock HorizontalAlignment="Left" Margin="55,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="48" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Islam"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="165,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="66" FontSize="16" FontWeight="Bold" Text="Judaism"/>
+        <TextBox TextWrapping="Wrap" Margin="0,69,0,544" Text="Select your religion" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" FontStyle="Italic" BorderThickness="2.5" TextAlignment="Center" HorizontalAlignment="Center" Width="298" TextChanged="TextBox_TextChanged"/>
+        <Image Height="100" Width="100" Margin="29,413,391,137" Source="/Taoism.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="50,518,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="58" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Taoism"/></TextBlock>
+        <Image Height="100" Width="100" Margin="275,265,145,285" Source="/Shikhism.png"/>
+        <Image Height="100" Width="100" Margin="400,273,20,277" Source="/Shinto.png"/>
+        <TextBlock HorizontalAlignment="Left" Margin="287,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="76" FontSize="16" FontWeight="Bold"><Run Text="Shikhi"/><Run Language="en-ca" Text="s"/><Run Text="m"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="426,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="56" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Shinto"/></TextBlock>
+
+    </Grid>
+</Window>
