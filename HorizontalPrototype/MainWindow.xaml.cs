@@ -48,5 +48,12 @@ namespace HorizontalPrototype
         {
 
         }
+
+        private void French_Click(object sender, RoutedEventArgs e)
+        {
+            WindowFrench frenchMenu = new WindowFrench();
+            this.Visibility = Visibility.Hidden;
+            frenchMenu.Show();
+        }
     }
 }

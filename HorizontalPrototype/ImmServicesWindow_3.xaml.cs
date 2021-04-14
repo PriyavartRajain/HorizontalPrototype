@@ -42,5 +42,22 @@ namespace HorizontalPrototype
             this.Visibility = Visibility.Hidden;
             immServicesWindow5.Show();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void collectButton_Click(object sender, RoutedEventArgs e)
+        {
+            formcollect.Visibility = Visibility.Hidden;
+            collectButton.Visibility = Visibility.Hidden;
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            formcollect.Visibility = Visibility.Visible;
+            collectButton.Visibility = Visibility.Visible;
+        }
     }
 }

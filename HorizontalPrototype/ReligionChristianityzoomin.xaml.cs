@@ -13,27 +13,28 @@ using System.Windows.Shapes;
 namespace HorizontalPrototype
 {
     /// <summary>
-    /// Interaction logic for ReligionChristianity.xaml
+    /// Interaction logic for ReligionChristianityzoomin.xaml
     /// </summary>
-    public partial class ReligionChristianity : Window
+    public partial class ReligionChristianityzoomin : Window
     {
-        public ReligionChristianity()
+        public ReligionChristianityzoomin()
         {
             InitializeComponent();
         }
-
-        private void openReligion(object sender, RoutedEventArgs e)
-        {
-            Religion religion = new Religion();
-            this.Visibility = Visibility.Hidden;
-            religion.Show();
-        }
-
         private void openWindow1(object sender, RoutedEventArgs e)
         {
             Window1 window1 = new Window1();
             this.Visibility = Visibility.Hidden;
             window1.Show();
+        }
+
+
+
+        private void goback(object sender, RoutedEventArgs e)
+        {
+            ReligionChristianity openfestival = new ReligionChristianity();
+            this.Visibility = Visibility.Hidden;
+            openfestival.Show();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -41,20 +42,17 @@ namespace HorizontalPrototype
             this.Visibility = Visibility.Hidden;
             mapZoomedOut.Show();
         }
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+     
+        private void showreligion(object sender, RoutedEventArgs e)
         {
-            ReligionChristianityzoomin mapZoomedIn = new ReligionChristianityzoomin();
+            ReligionChristianity2 religion = new ReligionChristianity2();
             this.Visibility = Visibility.Hidden;
-            mapZoomedIn.Show();
+            religion.Show();
         }
 
 
 
-        private void showhouse(object sender, RoutedEventArgs e)
-        {
-            ReligionChristianity2 window2 = new ReligionChristianity2();
-            this.Visibility = Visibility.Hidden;
-            window2.Show();
-        }
+
+
     }
 }

@@ -13,7 +13,7 @@
         <Image x:Name="identityImg" Margin="68,227,376,353" Stretch="Fill" Source="/identitfication.png"/>
         <Label Content="Government Issued Photo ID." HorizontalAlignment="Left" Margin="168,238,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="Pre-Filled Form: " HorizontalAlignment="Left" Margin="168,326,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <Button Content="Print" HorizontalAlignment="Left" Margin="238,360,0,0" VerticalAlignment="Top" Height="23" Width="62" FontSize="16"/>
+        <Button Content="Print" HorizontalAlignment="Left" Margin="238,360,0,0" VerticalAlignment="Top" Height="23" Width="62" FontSize="16" Click="Button_Click"/>
         <Label Content="Proof you are allowed to live in Canada" HorizontalAlignment="Left" Margin="168,435,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Label Content="Where to get:  " HorizontalAlignment="Left" Margin="20,484,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontStyle="Normal"/>
         <Button Content="Alberta Registry Locations" HorizontalAlignment="Left" Height="25" Margin="167,521,0,0" VerticalAlignment="Top" Width="204" FontSize="16" Click="openImmServWindow5"/>
@@ -30,7 +30,7 @@
             </Button.Template>
         </Button>
         <Image Margin="60,302,366,266" Stretch="Fill" Source="/form.png"/>
-        <Image Margin="76,391,384,171" Stretch="Fill" Source="/passport.png"/>
+        <Image Margin="68,391,392,171" Stretch="Fill" Source="/passport.png"/>
         <Button x:Name="GoMainWindow" HorizontalAlignment="Left" Margin="440,560,0,0" VerticalAlignment="Top" Height="70" Click="openWindow1" Width="62">
             <Button.Template>
                 <ControlTemplate>
@@ -38,5 +38,7 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        <TextBox Name="formcollect" HorizontalAlignment="Left" Margin="154,314,0,0" Text=" &#xD;&#xA;  Please collect the printed form " TextWrapping="Wrap" VerticalAlignment="Top" Width="256" Height="70" FontWeight="Bold" FontSize="16" FontStyle="Italic" TextChanged="TextBox_TextChanged" Visibility="Hidden"/>
+        <Button Name="collectButton" Content="Done" HorizontalAlignment="Left" Margin="246,391,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.473,0.578" Height="39" Width="62" FontSize="16" FontWeight="Bold" Click="collectButton_Click" Visibility="Hidden"/>
     </Grid>
 </Window>

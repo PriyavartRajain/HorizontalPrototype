@@ -13,20 +13,13 @@ using System.Windows.Shapes;
 namespace HorizontalPrototype
 {
     /// <summary>
-    /// Interaction logic for ReligionChristianity.xaml
+    /// Interaction logic for Housingzoomin.xaml
     /// </summary>
-    public partial class ReligionChristianity : Window
+    public partial class Housingzoomin : Window
     {
-        public ReligionChristianity()
+        public Housingzoomin()
         {
             InitializeComponent();
-        }
-
-        private void openReligion(object sender, RoutedEventArgs e)
-        {
-            Religion religion = new Religion();
-            this.Visibility = Visibility.Hidden;
-            religion.Show();
         }
 
         private void openWindow1(object sender, RoutedEventArgs e)
@@ -35,26 +28,33 @@ namespace HorizontalPrototype
             this.Visibility = Visibility.Hidden;
             window1.Show();
         }
+
+
+
+        private void goback(object sender, RoutedEventArgs e)
+        {
+            EventsFestivals openfestival = new EventsFestivals();
+            this.Visibility = Visibility.Hidden;
+            openfestival.Show();
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ReligionChristianity mapZoomedOut = new ReligionChristianity();
+            Housing mapZoomedOut = new Housing();
             this.Visibility = Visibility.Hidden;
             mapZoomedOut.Show();
         }
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            ReligionChristianityzoomin mapZoomedIn = new ReligionChristianityzoomin();
-            this.Visibility = Visibility.Hidden;
-            mapZoomedIn.Show();
-        }
-
-
 
         private void showhouse(object sender, RoutedEventArgs e)
         {
-            ReligionChristianity2 window2 = new ReligionChristianity2();
+            housing2 window2 = new housing2();
             this.Visibility = Visibility.Hidden;
             window2.Show();
+        }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            search.Visibility = Visibility.Hidden;
+
+
         }
     }
 }

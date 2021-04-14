@@ -19,78 +19,78 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Border BorderThickness="1" BorderBrush="Black" HorizontalAlignment="Center" Height="40" Margin="0,118,0,0" VerticalAlignment="Top" Width="278"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="406,90,0,0" VerticalAlignment="Top" Width="78" Height="86">
+        <TextBox x:Name="display" IsReadOnly="True" HorizontalAlignment="Center" Height="40" Margin="0,118,0,0" VerticalAlignment="Top"  FontWeight="SemiBold" FontSize="28" Width="278" ></TextBox>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="406,90,0,0" VerticalAlignment="Top" Width="78" Height="86" Click="Button_Click_1">
             <Button.Template>
                 <ControlTemplate>
                     <Image Height="Auto" Stretch="Fill" Source="/delete.png" Margin="0,14,5,7"/>
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="121,175,0,0" VerticalAlignment="Top">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="121,175,0,0" VerticalAlignment="Top" Click="Pad_1">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/1.png" Height="76" Width="68" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Center" Margin="0,175,0,0" VerticalAlignment="Top">
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,175,0,0" VerticalAlignment="Top" Click="Pad_2">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/2.png" Height="76" Width="68" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="331,175,0,0" VerticalAlignment="Top">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="331,175,0,0" VerticalAlignment="Top" Click="Pad_3">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/3.png" Height="76" Width="68" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="121,256,0,0" VerticalAlignment="Top">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="121,256,0,0" VerticalAlignment="Top" Click="Pad_4">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/4.png" Height="76" Width="68" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,256,0,0">
+        <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,256,0,0" Click="Pad_5">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/5.png" Height="76" Width="68" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="331,256,0,0" VerticalAlignment="Top">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="331,256,0,0" VerticalAlignment="Top" Click="Pad_6">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/6.png" Height="76" Width="68" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="121,337,0,0" VerticalAlignment="Top">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="121,337,0,0" VerticalAlignment="Top" Click="Pad_7">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/7.png" Height="76" Width="68" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Center" Margin="0,337,0,0" VerticalAlignment="Top">
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,337,0,0" VerticalAlignment="Top" Click="Pad_8">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/8.png" Height="76" Width="68" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="331,337,0,0" VerticalAlignment="Top">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="331,337,0,0" VerticalAlignment="Top" Click="Pad_9">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/9.png" Height="76" Width="68" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button Content="Button" HorizontalAlignment="Center" Margin="0,418,0,0" VerticalAlignment="Top">
+        <Button Content="Button" HorizontalAlignment="Center" Margin="0,418,0,0" VerticalAlignment="Top" Click="Pad_0">
             <Button.Template>
                 <ControlTemplate>
                     <Image Source="/0.png" Height="76" Width="68" />

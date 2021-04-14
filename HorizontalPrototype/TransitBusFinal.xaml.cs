@@ -13,25 +13,26 @@ using System.Windows.Shapes;
 namespace HorizontalPrototype
 {
     /// <summary>
-    /// Interaction logic for Transit.xaml
+    /// Interaction logic for TransitBusFinal.xaml
     /// </summary>
-    public partial class Transit : Window
+    public partial class TransitBusFinal : Window
     {
-        public Transit()
+        public TransitBusFinal()
         {
             InitializeComponent();
-        }
-
-        private void openWindow1(object sender, RoutedEventArgs e)
-        {
-            Window1 window1 = new Window1();
-            this.Visibility = Visibility.Hidden;
-            window1.Show();
         }
 
         private void TransitBus(object sender, RoutedEventArgs e)
         {
             TransitBus tbus = new TransitBus();
+            tbus.get_directions_btn.Visibility = Visibility.Hidden;
+            this.Visibility = Visibility.Hidden;
+            tbus.Show();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            TransitTrain tbus = new TransitTrain();
             this.Visibility = Visibility.Hidden;
             tbus.Show();
         }
@@ -53,14 +54,6 @@ namespace HorizontalPrototype
             {
                 Username.Text = "Search...";
             }
-        }
-
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            TransitTrain tbus = new TransitTrain();
-            this.Visibility = Visibility.Hidden;
-            tbus.Show();
         }
     }
 }

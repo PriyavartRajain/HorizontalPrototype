@@ -9,7 +9,7 @@
     <Grid Width="520" Height="650">
         <Image x:Name="citymap_1" HorizontalAlignment="Center" Height="656" VerticalAlignment="Center" Width="539" Source="/map1.PNG"/>
         <Image x:Name="man" HorizontalAlignment="Left" Height="50" Margin="49,363,0,0" VerticalAlignment="Top" Width="49" Source="/man.png"/>
-        <ComboBox x:Name="ExploreComboBox" Width="174" Height="28" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="35,120,0,0" IsDropDownOpen="True" SelectionChanged="ExploreComboBox_SelectionChanged">
+        <ComboBox x:Name="ExploreComboBox" Width="174" Height="28" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="35,120,0,0" IsDropDownOpen="False" SelectionChanged="ExploreComboBox_SelectionChanged">
             <ComboBoxItem Content="Hotels"></ComboBoxItem>
             <ComboBoxItem Content="Restaurants"></ComboBoxItem>
             <ComboBoxItem Content="Recreation"></ComboBoxItem>
