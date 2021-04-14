@@ -12,12 +12,12 @@
         <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
         <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
         <Grid Height="650" Width="520">
-            <ScrollBar x:Name="scroll_lang" HorizontalAlignment="Left" Margin="473,163,0,0" VerticalAlignment="Top" Height="447" ValueChanged="scroll_lang_ValueChanged"/>
             <Label x:Name="Welcome_message" Content="I am here to help!" HorizontalAlignment="Left" Margin="117,99,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" FontFamily="Ink Free"/>
-            <Button x:Name="LangSelec_1" Content="Press here for English" HorizontalAlignment="Left" Margin="162,222,0,0" VerticalAlignment="Top" FontSize="22" Click="OpenLoginOptions"/>
-            <Button x:Name="LangSelect_2" Content="हिंदी के लिए यहां दबाएं" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click" FontSize="22" Margin="169,304,0,0"/>
-            <Button x:Name="langSelec_3" Content="اردو کے لئے یہاں دبائیں" HorizontalAlignment="Left" Margin="170,388,0,0" VerticalAlignment="Top" FontSize="22"/>
-            <Button x:Name="langSelec_4" Content="点击这里查看普通话" HorizontalAlignment="Left" Margin="167,476,0,0" VerticalAlignment="Top" FontSize="22"/>
+            <Button x:Name="LangSelec_1" Content="Press here for English" HorizontalAlignment="Left" Margin="158,187,0,0" VerticalAlignment="Top" FontSize="22" Click="OpenLoginOptions" Width="217"/>
+            <Button x:Name="LangSelect_2" Content="हिंदी के लिए यहां दबाएं" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click" FontSize="22" Margin="158,325,0,0" Width="217"/>
+            <Button x:Name="langSelec_3" Content="اردو کے لئے یہاں دبائیں" HorizontalAlignment="Left" Margin="167,402,0,0" VerticalAlignment="Top" FontSize="22" Height="34" Width="204"/>
+            <Button x:Name="langSelec_4" Content="点击这里查看普通话" HorizontalAlignment="Left" Margin="166,483,0,0" VerticalAlignment="Top" FontSize="22"/>
+            <Button x:Name="French" Content="Appuyez ici pour le français" HorizontalAlignment="Center" Margin="0,250,0,0" VerticalAlignment="Top" FontSize="22" Click="French_Click" Width="293"/>
             <Image HorizontalAlignment="Left" Height="64" Margin="195,590,0,0" VerticalAlignment="Top" Width="147" Source="/LogoTransparentCropped.png"/>
         </Grid>
         <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
