@@ -29,11 +29,44 @@ namespace HorizontalPrototype
             window1.Show();
         }
 
-        private void openFestivals(object sender, MouseButtonEventArgs e)
+
+
+        private void OnClick1(object sender, RoutedEventArgs e)
         {
-            EventsFestivals eventsFestivals = new EventsFestivals();
+            EventsFestivals openfestival = new EventsFestivals();
             this.Visibility = Visibility.Hidden;
-            eventsFestivals.Show();
+            openfestival.Show();
         }
+        private void Click3(object sender, RoutedEventArgs e)
+        {
+            EventsFestivals openmusic = new EventsFestivals();
+            this.Visibility = Visibility.Hidden;
+            openmusic.Show();
+        }
+        private void Click2(object sender, RoutedEventArgs e)
+        {
+            EventsFestivals openfestival = new EventsFestivals();
+            this.Visibility = Visibility.Hidden;
+            openfestival.Show();
+        }
+        private void Click4(object sender, RoutedEventArgs e)
+        {
+            EventsFestivals openfestival = new EventsFestivals();
+            this.Visibility = Visibility.Hidden;
+            openfestival.Show();
+        }
+        private void Click5(object sender, RoutedEventArgs e)
+        {
+            EventsFestivals openfestival = new EventsFestivals();
+            this.Visibility = Visibility.Hidden;
+            openfestival.Show();
+        }
+        private void Click6(object sender, RoutedEventArgs e)
+        {
+            EventsFestivals openfestival = new EventsFestivals();
+            this.Visibility = Visibility.Hidden;
+            openfestival.Show();
+        }
+
     }
 }

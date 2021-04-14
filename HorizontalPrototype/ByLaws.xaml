@@ -7,84 +7,88 @@
         mc:Ignorable="d"
         Title="ByLaws" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
     <Grid Width="520" Height="650">
-        <Button x:Name="Cannabis" Margin="165,64,279,493">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="249*"/>
+            <RowDefinition Height="401*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Cannabis" Margin="228,248,202,286" Grid.RowSpan="2">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="bylawIcon" Source="/marijuana.png" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label Content="Addresses" HorizontalAlignment="Left" Margin="25,155,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label Content="Garbage" HorizontalAlignment="Left" Margin="294,153,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label Content="Littering" HorizontalAlignment="Left" Margin="412,154,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.433,-0.072"/>
-        <Label Content="Cannabis" HorizontalAlignment="Left" Margin="159,155,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Button x:Name="Smoking" Margin="291,198,156,364">
+        <Label Content="Addresses" HorizontalAlignment="Left" Margin="52,111,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Grid.Row="1"/>
+        <Label Content="Garbage" HorizontalAlignment="Left" Margin="235,208,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Content="Littering" HorizontalAlignment="Left" Margin="61,208,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.433,-0.072"/>
+        <Label Content="Cannabis" HorizontalAlignment="Left" Margin="231,111,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Grid.Row="1"/>
+        <Button x:Name="Smoking" Margin="378,101,33,46">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="bylawIcon" Source="/smoking.png" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="Street" Margin="415,196,31,360" RenderTransformOrigin="0.47,0.311">
+        <Button x:Name="Street" Margin="397,1,36,302" RenderTransformOrigin="0.47,0.311" Grid.Row="1">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="bylawIcon" Source="/work-tools.png" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="Address" Margin="31,78,415,500">
+        <Button x:Name="Address" Margin="52,0,376,290" Grid.Row="1">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="bylawIcon" Source="/address.png" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="Littering" Margin="409,78,41,496" Click="Littering_Click">
+        <Button x:Name="Littering" Margin="52,101,385,46" Click="Littering_Click">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="bylawIcon" Source="/throw-trash.png" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label Content="Smoking" HorizontalAlignment="Left" Margin="291,290,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label Content="streets" HorizontalAlignment="Left" Margin="419,290,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Button x:Name="Water" Margin="34,337,422,241">
+        <Label Content="Smoking" HorizontalAlignment="Left" Margin="394,208,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label Content="streets" HorizontalAlignment="Left" Margin="413,111,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Grid.Row="1"/>
+        <Button x:Name="Water" Margin="231,155,203,146" Grid.Row="1">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="bylawIcon" Source="/drop.png" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="Noise" Margin="40,213,414,365" RenderTransformOrigin="0.482,0.729">
+        <Button x:Name="Noise" Margin="61,162,379,141" RenderTransformOrigin="0.482,0.729" Grid.Row="1">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="bylawIcon" Source="/noise.png" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="Parks" Margin="163,213,291,365" RenderTransformOrigin="0.527,0.738">
+        <Button x:Name="Parks" Margin="394,162,42,141" RenderTransformOrigin="0.527,0.738" Grid.Row="1">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="bylawIcon" Source="/park.png" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Label Content="Water" HorizontalAlignment="Left" Margin="40,414,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
-        <Label Content="Noise" HorizontalAlignment="Left" Margin="40,290,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.463,0.331"/>
-        <Label Content="Parks\Pathways" HorizontalAlignment="Left" Margin="129,290,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" RenderTransformOrigin="2.582,3.15"/>
-        <Button x:Name="Garbage" Margin="292,78,154,500">
+        <Label Content="Water" HorizontalAlignment="Left" Margin="246,260,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Grid.Row="1"/>
+        <Label Content="Noise" HorizontalAlignment="Left" Margin="61,260,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" RenderTransformOrigin="0.463,0.331" Width="70" Grid.Row="1"/>
+        <Label Content="Parks\Pathways" HorizontalAlignment="Left" Margin="368,260,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" RenderTransformOrigin="2.582,3.15" Grid.Row="1"/>
+        <Button x:Name="Garbage" Margin="223,99,202,48">
             <Button.Template>
                 <ControlTemplate>
                     <Image x:Name="bylawIcon" Source="/bin.png" />
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Image HorizontalAlignment="Center" Height="64" Margin="0,595,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
+        <Image HorizontalAlignment="Center" Height="64" Margin="0,346,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png" Grid.Row="1"/>
         <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
         <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
         <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
         <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
-        <Button x:Name="GoBack" HorizontalAlignment="Left" Margin="10,560,0,0" VerticalAlignment="Top" Height="70" Click="openWindow1" Width="63">
+        <Button x:Name="GoBack" HorizontalAlignment="Left" Margin="10,311,0,0" VerticalAlignment="Top" Height="70" Click="openWindow1" Width="63" Grid.Row="1">
             <Button.Template>
                 <ControlTemplate>
                     <Image Height="70" Stretch="UniformToFill" Source="/previous.png" Width="66" Margin="0,0,0,0"/>

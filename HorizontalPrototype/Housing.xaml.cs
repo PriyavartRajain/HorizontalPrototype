@@ -28,5 +28,38 @@ namespace HorizontalPrototype
             this.Visibility = Visibility.Hidden;
             window1.Show();
         }
+
+        private void goback(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            this.Visibility = Visibility.Hidden;
+            window1.Show();
+
+        }
+
+        private void showhouse(object sender, RoutedEventArgs e)
+        {
+           housing2 window2 = new housing2();
+            this.Visibility = Visibility.Hidden;
+            window2.Show();
+        }
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            search.Visibility = Visibility.Hidden;
+           
+
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+       
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Housingzoomin mapZoomedIn = new Housingzoomin();
+            this.Visibility = Visibility.Hidden;
+            mapZoomedIn.Show();
+        }
+
     }
 }

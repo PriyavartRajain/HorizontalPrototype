@@ -35,5 +35,17 @@ namespace HorizontalPrototype
             this.Visibility = Visibility.Hidden;
             window1.Show();
         }
+        private void Click1(object sender, RoutedEventArgs e)
+        {
+            EventsFestival2 openfestival2 = new EventsFestival2();
+            this.Visibility = Visibility.Hidden;
+            openfestival2.Show();
+        }
+        private void Click2(object sender, RoutedEventArgs e)
+        {
+            //EventsFestivals openfestival = new EventsFestivals();
+            //this.Visibility = Visibility.Hidden;
+            //openfestival.Show();
+        }
     }
 }

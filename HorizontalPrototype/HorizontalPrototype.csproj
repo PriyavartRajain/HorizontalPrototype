@@ -37,7 +37,7 @@
     <None Remove="Islam.png" />
     <None Remove="jobfair.png" />
     <None Remove="Judaism.png" />
-    <None Remove="location-map-flat.png" />
+	  <None Remove="location-map-flat.png" />
     <None Remove="logInScreen.png" />
     <None Remove="LogoTransparentCropped.png" />
     <None Remove="logout.png" />
@@ -79,6 +79,13 @@
     <None Remove="Zoo-Lights.jpg" />
     <None Remove="zoomedIn.PNG" />
     <None Remove="zoomedOut.PNG" />
+    <None Remove="housing1.png" />
+    <None Remove="housing2.png" /> 
+    <None Remove="housing3.png" />
+    <None Remove="qr.png" />
+	<None Remove="bus.PNG" />
+	<None Remove="bus2.PNG" />
+	<None Remove="Train.PNG" />
   </ItemGroup>
 
   <ItemGroup>
@@ -165,6 +172,13 @@
     <Resource Include="Zoo-Lights.jpg" />
     <Resource Include="zoomedIn.PNG" />
     <Resource Include="zoomedOut.PNG" />
+    <Resource Include="housing1.png" />
+    <Resource Include="housing2.png" />
+	<Resource Include="housing3.png" />
+    <Resource Include="qr.png" />
+	<Resource Include="bus.PNG" />
+	<Resource Include="bus2.PNG" />
+	<Resource Include="Train.PNG" />
   </ItemGroup>
 
 </Project>

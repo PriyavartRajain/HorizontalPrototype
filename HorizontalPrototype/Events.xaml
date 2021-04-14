@@ -5,13 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HorizontalPrototype"
         mc:Ignorable="d"
-        Title="Events" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
-    <Grid Width="520" Height="650">
-        <Image HorizontalAlignment="Center" Height="64" Margin="0,595,0,0" VerticalAlignment="Top" Width="148" Source="/LogoTransparentCropped.png"/>
-        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187"/>
-        <Label x:Name="Weather" Content="12 C" HorizontalAlignment="Left" Margin="424,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="60"/>
-        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="484,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798"/>
-        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Center" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96"/>
+        Title="Events" FontWeight="Black"  ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen">
+    <Grid Width="520" Height="650" Background="white" >
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="101*"/>
+            <ColumnDefinition Width="419*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image HorizontalAlignment="Left" Height="46" Margin="85,595,0,0" VerticalAlignment="Top" Width="129" Source="/LogoTransparentCropped.png" Grid.Column="1"/>
+
+        <Label x:Name="date" Content="March 12, 2021" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="187" Grid.ColumnSpan="2"/>
+        <Label x:Name="Weather" Content="12 C" Margin="323,4,36,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Grid.Column="1"/>
+        <Image x:Name="weatherPic" HorizontalAlignment="Left" Height="37" Margin="383,6,0,0" VerticalAlignment="Top" Width="40" Source="/sun_PNG13427.png" RenderTransformOrigin="0.449,0.798" Grid.Column="1"/>
+        <Label x:Name="Weather_Copy" Content="3:30PM" HorizontalAlignment="Left" Margin="111,4,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="96" Grid.Column="1"/>
         <Button x:Name="GoBack" HorizontalAlignment="Left" Margin="10,560,0,0" VerticalAlignment="Top" Height="70" Click="openWindow1" Width="63">
             <Button.Template>
                 <ControlTemplate>
@@ -19,19 +27,46 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <TextBox TextWrapping="Wrap" Margin="0,69,0,544" Text="Choose what interests you!" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" FontStyle="Italic" BorderThickness="2.5" TextAlignment="Center" HorizontalAlignment="Center" Width="298"/>
-        <Image Height="100" Width="100" Margin="29,125,391,425" Source="/eventsFestival.png" MouseDown="openFestivals"/>
-        <Image Margin="145,132,269,408" Source="/Informational.png"/>
-        <Image Margin="285,120,141,421" Source="/music.png"/>
-        <Image Height="100" Width="100" Margin="29,288,391,262" Source="/jobfair.png"/>
-        <Image Margin="151,294,275,262" Source="/tradeShow.png"/>
-        <Image Margin="414,145,26,425" Source="/networking.png"/>
-        <TextBlock HorizontalAlignment="Left" Margin="148,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="112" FontSize="16" FontWeight="Bold" RenderTransformOrigin="0.589,0.535"><Run Language="en-ca" Text="Informational"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="408,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="92" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Networking"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="46,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="66" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Job Fair"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="156,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="96" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Trade Show"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="46,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="66" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Festivals"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="308,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="30" Width="48" FontSize="16" FontWeight="Bold"><Run Language="en-ca" Text="Music"/></TextBlock>
+        <Button Name="btn1" 
+        BorderBrush="Black" BorderThickness="1" Cursor="Hand"
+        Click="OnClick1"  ClickMode="Press" Margin="50,273,376,347" Grid.ColumnSpan="2">
+            Festivals
+        </Button>
+        <Button Name="button2" 
+        BorderBrush="Black" BorderThickness="1" Cursor="Hand"
+        Click="Click2"  ClickMode="Press" Margin="111,273,214,347" Grid.Column="1">
+            Social
+        </Button>
+        <Button Name="button6" 
+        BorderBrush="Black" BorderThickness="1" Cursor="Hand"
+        Click="Click6"  ClickMode="Press" Margin="281,451,44,169" Grid.Column="1">
+            Trade Show
+        </Button>
+        <Button Name="button5" 
+        BorderBrush="Black" BorderThickness="1" Cursor="Hand"
+        Click="Click5"  ClickMode="Press" Margin="111,451,214,169" Grid.Column="1">
+            Networking
+        </Button>
+        <Button Name="button4" 
+        BorderBrush="Black" BorderThickness="1" Cursor="Hand"
+        Click="Click4"  ClickMode="Press" Margin="50,448,376,172" Grid.ColumnSpan="2">
+            Job Fair
+        </Button>
+        <Button Name="button3" 
+        BorderBrush="Black" BorderThickness="1" Cursor="Hand"
+        Click="Click3"  ClickMode="Press" Margin="281,273,44,347" Grid.Column="1">
+            Music
+        </Button>
+
+
+
+        <TextBox TextWrapping="Wrap" Margin="10,92,0,521" Text="Choose what interests you!" Background="AliceBlue" FontSize="20" FontWeight="Bold" TextDecorations="{x:Null}" BorderThickness="2.5" TextAlignment="Center" HorizontalAlignment="Left" Width="298" Grid.Column="1"/>
+        <Image Height="100" Width="100" Margin="46,157,374,393" Source="/eventsFestival.png"  Grid.ColumnSpan="2"/>
+        <Image Margin="111,151,208,387"  Source="/networking.png" Grid.Column="1"/>
+        <Image Margin="287,161,54,381"  Source="/music.png" Grid.Column="1"/>
+        <Image Height="100" Width="100" Margin="44,339,376,211" Source="/jobfair.png" Grid.ColumnSpan="2"/>
+        <Image Margin="108,343,205,197" Source="/Informational.png" Grid.Column="1"/>
+        <Image Margin="279,357,46,199" Source="/tradeShow.png" Grid.Column="1"/>
 
     </Grid>
 </Window>

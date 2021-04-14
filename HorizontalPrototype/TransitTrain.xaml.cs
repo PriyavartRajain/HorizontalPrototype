@@ -13,23 +13,23 @@ using System.Windows.Shapes;
 namespace HorizontalPrototype
 {
     /// <summary>
-    /// Interaction logic for Transit.xaml
+    /// Interaction logic for TransitTrain.xaml
     /// </summary>
-    public partial class Transit : Window
+    public partial class TransitTrain : Window
     {
-        public Transit()
+        public TransitTrain()
         {
             InitializeComponent();
         }
 
-        private void openWindow1(object sender, RoutedEventArgs e)
+        private void Transit(object sender, RoutedEventArgs e)
         {
-            Window1 window1 = new Window1();
+            Transit window1 = new Transit();
             this.Visibility = Visibility.Hidden;
             window1.Show();
         }
 
-        private void TransitBus(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             TransitBus tbus = new TransitBus();
             this.Visibility = Visibility.Hidden;
@@ -53,14 +53,6 @@ namespace HorizontalPrototype
             {
                 Username.Text = "Search...";
             }
-        }
-
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            TransitTrain tbus = new TransitTrain();
-            this.Visibility = Visibility.Hidden;
-            tbus.Show();
         }
     }
 }
